@@ -1,0 +1,40 @@
+/* IMPORT RESET */
+@import url("reset.css");
+
+/* IMPORT 12 COLUMN RESPONSIVE GS */
+@import url("responsive.gs.24col.css");
+
+
+/*	EXAMPLE STYLES */
+body {
+	font-family: sans-serif;
+	color: black;
+}
+
+header {
+	text-align: left;
+	background: #ccc; 
+	height: 160px;
+	padding:20px 20px;
+}
+
+article {
+	text-align: center;
+	background: #aaa;
+	height:500px;
+	padding:100px 20px;
+}
+
+aside {
+	text-align: center;
+	background: #ccc;
+}
+
+footer {
+	text-align: center;
+	background: #ccc;
+	height: 160px;
+	padding:20px 20px;
+}
+
+ 
