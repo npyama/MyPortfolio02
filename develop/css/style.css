@@ -2,29 +2,95 @@
 @import url("reset.css");
 /* IMPORT 12 COLUMN RESPONSIVE GS */
 @import url("responsive.gs.24col.css");
-/*	EXAMPLE STYLES */
+/* INPORT WEB FONT */
+@import url(http://fonts.googleapis.com/css?family=Raleway:100);
+/* INPORT FONT M+*/
+@font-face {
+  font-family: mplus-1p-thin;
+  src: url("http://mplus-fonts.sourceforge.jp/webfonts/mplus-1p-thin.ttf") format("truetype"); }
+/***************************
+	ALL SETTING 
+****************************/
 body {
-  font-family: sans-serif;
+  font-size: 18px;
+  font-family: 'Raleway', mplus-1p-thin, cursive;
   color: black; }
+
+h1, h2, h3, h4, h5, h6 {
+  color: #000;
+  font-size: 14px;
+  letter-spacing: 1px;
+  text-shadow: black 0 1px -1px;
+  margin: 0px;
+  padding: 0px; }
+
+a {
+  text-decoration: none;
+  color: #000;
+  -webkit-transition: all 1s ease-out;
+  -moz-transition: all 1s ease-out;
+  -o-transition: all 1s ease-out;
+  -ms-transition: all 1s ease-out;
+  transition: all 1s ease-out; }
 
 header {
   text-align: left;
-  background: #ccc;
-  height: 160px;
-  padding: 20px 20px; }
+  height: 100px;
+  padding: 20px 20px;
+  background: #fff; }
+  header h1 {
+    font-size: 48px; }
 
 article {
-  text-align: center;
-  background: #aaa;
-  height: 500px;
-  padding: 100px 20px; }
-
-aside {
-  text-align: center;
-  background: #ccc; }
+  margin: 0px;
+  background: #aaa; }
 
 footer {
   text-align: center;
-  background: #ccc;
+  background: #fff;
   height: 160px;
   padding: 20px 20px; }
+
+/***************************
+	Contents
+****************************/
+.contentsHeader {
+  margin: 0px;
+  position: relative;
+  top: -185px; }
+
+.contentsBtn {
+  position: relative;
+  top: 90px;
+  left: 230px;
+  z-index: 101; }
+
+.contentsFooter {
+  position: relative;
+  bottom: 335px; }
+
+/***************************
+	aboutMe
+****************************/
+#aboutMe {
+  height: 420px;
+  background: #ff0; }
+
+#contentsAboutMe {
+  opacity: 0;
+  height: 0px;
+  background-color: #00f;
+  background-image: url("../images/bgAboutMe.png");
+  position: relative;
+  top: -93px;
+  z-index: -101; }
+
+#skills {
+  width: 100%;
+  height: 300px; }
+
+#products {
+  width: 100%;
+  height: 300px; }
+
+/*# sourceMappingURL=style.css.map */
