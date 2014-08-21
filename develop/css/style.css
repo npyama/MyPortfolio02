@@ -9,18 +9,26 @@
   font-family: mplus-1p-thin;
   src: url("http://mplus-fonts.sourceforge.jp/webfonts/mplus-1p-thin.ttf") format("truetype"); }
 /***************************
+	SNIPPET
+****************************/
+/* ベンダープレフィックス 
+　　記述例 @include css3(transition, 0.5s);　*/
+/***************************
 	ALL SETTING 
 ****************************/
 body {
-  font-size: 18px;
+  font-size: 14px;
   font-family: 'Raleway', mplus-1p-thin, cursive;
   color: black; }
 
 h1, h2, h3, h4, h5, h6 {
-  color: #000;
+  letter-spacing: 1px;
+  margin: 0px;
+  padding: 0px; }
+
+p {
   font-size: 14px;
   letter-spacing: 1px;
-  text-shadow: black 0 1px -1px;
   margin: 0px;
   padding: 0px; }
 
@@ -29,8 +37,8 @@ a {
   color: #000;
   -webkit-transition: all 1s ease-out;
   -moz-transition: all 1s ease-out;
-  -o-transition: all 1s ease-out;
   -ms-transition: all 1s ease-out;
+  -o-transition: all 1s ease-out;
   transition: all 1s ease-out; }
 
 header {
@@ -80,49 +88,51 @@ footer {
 	aboutMe
 ****************************/
 #aboutMe {
+  width: 640px;
   height: 1260px-90px; }
 
 #contentsAboutMe {
-  display: block;
-  height: 840px;
   width: 640px;
   margin: -90px 0px 0px 0px;
   padding: 120px 30px;
-  background-image: url("../images/bgAboutMe.png");
   background-repeat: none;
-  z-index: 49; }
+  z-index: 49;
+  display: block;
+  height: 840px;
+  background-image: url("../images/bgAboutMe.png"); }
 
 /***************************
 	skill
 ****************************/
 #skill {
+  width: 640px;
   height: 1260px-90px; }
 
 #contentsSkill {
-  display: block;
-  height: 1400px;
   width: 640px;
   margin: -90px 0px 0px 0px;
   padding: 120px 30px;
-  background-image: url("../images/bgSkill.png");
   background-repeat: none;
-  z-index: 49; }
+  z-index: 49;
+  display: block;
+  height: 840px;
+  background-image: url("../images/bgSkill.png"); }
 
 /***************************
 	Product
 ****************************/
 #product {
+  width: 640px;
   height: 1260px-90px; }
 
 #contentsProduct {
-  display: block;
-  height: 1400px;
   width: 640px;
   margin: -90px 0px 0px 0px;
   padding: 120px 30px;
-  background-color: #00f;
-  background-image: url("../images/bgProduct.png");
   background-repeat: none;
-  z-index: 49; }
+  z-index: 49;
+  display: block;
+  height: 840px;
+  background-image: url("../images/bgProduct.png"); }
 
 /*# sourceMappingURL=style.css.map */

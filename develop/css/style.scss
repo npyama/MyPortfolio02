@@ -14,23 +14,43 @@ font-family: mplus-1p-thin;
      format("truetype");
 }
 
+
+
+
+/***************************
+	SNIPPET
+****************************/
+
+/* ベンダープレフィックス 
+　　記述例 @include css3(transition, 0.5s);　*/
+@mixin css3($property, $value) {
+     @each $prefix in -webkit-, -moz-, -ms-, -o-, '' {
+          #{$prefix}#{$property}: $value;
+     }
+}
+
+
+
 /***************************
 	ALL SETTING 
 ****************************/
 
 body {
-	font-size: 18px;
-//	font-family:;
+	font-size: 14px;
 	font-family: 'Raleway', mplus-1p-thin, cursive;
 	color: black;
 }
 
 
 h1, h2, h3, h4, h5, h6 {
-	color:#000;
+	letter-spacing: 1px;
+	margin:0px;
+	padding:0px;
+}
+
+p {
 	font-size: 14px;
 	letter-spacing: 1px;
-	text-shadow:rgba(0, 0, 0, 1) 0 1px -1px;
 	margin:0px;
 	padding:0px;
 }
@@ -38,11 +58,7 @@ h1, h2, h3, h4, h5, h6 {
 a {
 	text-decoration:none;
 	color: #000;
-	-webkit-transition: all 1s ease-out;
-	-moz-transition: all 1s ease-out;
-	-o-transition: all 1s ease-out;
-	-ms-transition: all 1s ease-out;
-	transition: all 1s ease-out;
+	@include css3(transition, all 1s ease-out);
 }
 
 header {
@@ -104,13 +120,12 @@ footer {
 
 }
 
-@mixin maintext {
-	font:{
-		family: Arial;
-		size: 20px;
-		weight: bold;
-	}
-	color: #ff0000;
+@mixin contentsXXX {
+	width:640px;
+	margin: -90px 0px 0px 0px;
+	padding:120px 30px;
+   	background-repeat: none;
+	z-index: 49;
 }
 
 
@@ -118,27 +133,20 @@ footer {
 	aboutMe
 ****************************/
 #aboutMe{
-
 //close時
 //	height:420px;
 //	background:#ff0;
 //open時
+	width:640px;
 	height:1260px-90px;
 }
 
 #contentsAboutMe{
+	@include contentsXXX;
 	display:block;
 	height:840px;
-	width:640px;
-	margin: -90px 0px 0px 0px;
-	padding:120px 30px;
-//	background-color: #00f;
 	background-image: url("../images/bgAboutMe.png");
-   	background-repeat: none;
-	z-index: 49;
 }
-
-
 
 
 
@@ -150,21 +158,16 @@ footer {
 //	height:420px;
 //	background:#ff0;
 //open時
+	width:640px;
 	height:1260px-90px;
 }
 
 #contentsSkill{
+	@include contentsXXX;
 	display:block;
-	height:1400px;
-	width:640px;
-	margin: -90px 0px 0px 0px;
-	padding:120px 30px;
-//	background-color: #00f;
+	height:840px;
 	background-image: url("../images/bgSkill.png");
-	background-repeat: none;
-	z-index: 49;
 }
-
 
 
 
@@ -179,19 +182,15 @@ footer {
 //	height:420px;
 //	background:#ff0;
 //open時
+	width:640px;
 	height:1260px-90px;
 }
 
 #contentsProduct{
+	@include contentsXXX;
 	display:block;
-	height:1400px;
-	width:640px;
-	margin: -90px 0px 0px 0px;
-	padding:120px 30px;
-	background-color: #00f;
+	height:840px;
 	background-image: url("../images/bgProduct.png");
-	background-repeat: none;
-	z-index: 49;
 }
 
 
