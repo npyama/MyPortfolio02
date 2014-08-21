@@ -1,6 +1,6 @@
 
 //Contents toggle
-
+/*
 $(function(){
     $("#btnAboutMe").hover(
     //マウスオーバー時の処理
@@ -14,6 +14,32 @@ $(function(){
         $("#contentsAboutMe").css("height","0px")
     });
 });
+*/
+
+
+
+
+$(function(){
+
+ 	$('#btnAboutMe').click(function() {
+  		$('#contentsAboutMe').slideToggle('slow', function() {
+    	// アニメーション完了後に実行したい処理
+  		});
+	});
+
+
+});
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -41,6 +67,7 @@ $(function(){
 /****************************************
 	タップ判定
 ****************************************/
+/*
 $('img').click(function() {
 	$(this).animate({ 
 	opacity: '0.3'
@@ -50,7 +77,7 @@ $('img').click(function() {
 	}, { duration:200, easing: 'linear', });
 
 });
-
+*/
 
 /****************************************
 	contentsToggle

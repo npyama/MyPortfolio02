@@ -74,7 +74,7 @@ footer {
   width: 640px;
   margin-top: -270px;
   background-image: url("../images/btnHeader.png");
-  z-index: 52; }
+  z-index: 55; }
 
 .contentsFooter {
   height: 240px;
@@ -89,17 +89,18 @@ footer {
 ****************************/
 #aboutMe {
   width: 640px;
-  height: 1260px-90px; }
+  height: 1260px-90px;
+  background: #ff0; }
 
 #contentsAboutMe {
   width: 640px;
   margin: -90px 0px 0px 0px;
   padding: 120px 30px;
   background-repeat: none;
-  z-index: 49;
   background-image: url("../images/bgAboutMe.png");
+  z-index: 49;
   display: none;
-  height: 0px; }
+  height: 840px; }
   #contentsAboutMe h2 {
     font-size: 36px;
     margin-bottom: 30px; }
@@ -107,6 +108,9 @@ footer {
     font-size: 18px;
     line-height: 38px;
     margin-bottom: 5px; }
+
+#btnAboutMe {
+  display: block; }
 
 /***************************
 	skill
@@ -120,7 +124,6 @@ footer {
   margin: -90px 0px 0px 0px;
   padding: 120px 30px;
   background-repeat: none;
-  z-index: 49;
   display: block;
   height: 1400px;
   background-image: url("../images/bgSkill.png");
@@ -146,7 +149,6 @@ footer {
   margin: -90px 0px 0px 0px;
   padding: 120px 30px;
   background-repeat: none;
-  z-index: 49;
   display: block;
   height: 1400px;
   background-image: url("../images/bgProduct.png");
