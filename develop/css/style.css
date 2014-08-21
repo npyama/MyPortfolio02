@@ -47,43 +47,67 @@ article {
 
 footer {
   text-align: center;
-  background: #fff;
+  background: #f00;
   height: 160px;
   padding: 20px 20px; }
 
 /***************************
 	Contents
 ****************************/
+/*
 .contentsHeader {
-  margin: 0px;
-  position: relative;
-  top: -185px; }
+	margin:0px;
+	position: relative;
+	top:-185px;
+}
 
 .contentsBtn {
-  position: relative;
-  top: 90px;
-  left: 230px;
-  z-index: 101; }
+	position: relative;
+	top:90px;
+	left:230px;
+	z-index: 101;
+}
 
 .contentsFooter {
-  position: relative;
-  bottom: 335px; }
+	position: relative;
+	bottom:335px;
+}
+*/
+.contentsBtn {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 90px;
+  z-index: 53; }
+
+.contentsHeader {
+  height: 270px;
+  width: 640px;
+  margin-top: -270px;
+  background-image: url("../images/btnHeader.png");
+  z-index: 52; }
+
+.contentsFooter {
+  height: 240px;
+  width: 640px;
+  margin-top: -90px;
+  background-image: url("../images/btnFooter.png");
+  z-index: 51; }
 
 /***************************
 	aboutMe
 ****************************/
 #aboutMe {
-  height: 420px;
   background: #ff0; }
 
 #contentsAboutMe {
-  opacity: 0;
-  height: 0px;
+  display: none;
+  height: 840px;
   background-color: #00f;
   background-image: url("../images/bgAboutMe.png");
   position: relative;
   top: -93px;
-  z-index: -101; }
+  z-index: 101; }
 
 #skills {
   width: 100%;
