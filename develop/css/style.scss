@@ -98,6 +98,7 @@ footer {
 	margin-right: auto;
 	margin-top:90px;
 	z-index: 53;
+
 }
 
 .contentsHeader {
@@ -106,6 +107,7 @@ footer {
 	margin-top: -270px;
 	background-image: url("../images/btnHeader.png");
 	z-index:52;
+
 }
 
 .contentsFooter {
@@ -117,7 +119,6 @@ footer {
 	background-image: url("../images/btnFooter.png");
 	background-position: center;
 	z-index: 51;
-
 }
 
 @mixin contentsXXX {
@@ -126,6 +127,16 @@ footer {
 	padding:120px 30px;
    	background-repeat: none;
 	z-index: 49;
+	h2{	
+		font-size: 36px;
+		margin-bottom: 30px; 
+	}
+	h3{	
+		font-size: 18px; 
+		line-height: 38px;
+		margin-bottom: 5px; 
+	}
+
 }
 
 
@@ -133,9 +144,6 @@ footer {
 	aboutMe
 ****************************/
 #aboutMe{
-//close時
-//	height:420px;
-//	background:#ff0;
 //open時
 	width:640px;
 	height:1260px-90px;
@@ -143,9 +151,16 @@ footer {
 
 #contentsAboutMe{
 	@include contentsXXX;
-	display:block;
-	height:840px;
 	background-image: url("../images/bgAboutMe.png");
+
+//CLOSE時
+	display:none;
+	height:0px;
+//Open時
+//	display:block;
+//	height:840px;
+
+
 }
 
 
@@ -165,8 +180,15 @@ footer {
 #contentsSkill{
 	@include contentsXXX;
 	display:block;
-	height:840px;
+	height:1400px;
 	background-image: url("../images/bgSkill.png");
+
+//CLOSE時
+	display:none;
+//	height:0px;
+//Open時
+//	display:block;
+	height:840px;
 }
 
 
@@ -189,8 +211,15 @@ footer {
 #contentsProduct{
 	@include contentsXXX;
 	display:block;
-	height:840px;
+	height:1400px;
 	background-image: url("../images/bgProduct.png");
+
+//CLOSE時
+	display:none;
+//	height:0px;
+//Open時
+//	display:block;
+	height:840px;
 }
 
 

@@ -1,3 +1,25 @@
+
+//Contents toggle
+
+$(function(){
+    $("#btnAboutMe").hover(
+    //マウスオーバー時の処理
+    function(){
+        $("#contentsAboutMe").css("display","block")
+        $("#contentsAboutMe").css("height","840px")
+    },
+    //マウスアウト時の処理
+    function(){
+        $("#contentsAboutMe").css("display","none")
+        $("#contentsAboutMe").css("height","0px")
+    });
+});
+
+
+
+
+
+
 $(function(){
 
 
@@ -34,34 +56,8 @@ $('img').click(function() {
 	contentsToggle
 ****************************************/
 
-/*
-$('#btnAboutMe').click(function() {
-	$('#contentsAboutMe').animate({ 
-	opacity: '1'
-	}, { duration:200, easing: 'linear', });
-	$('#contentsAboutMe').animate({ 
-	height: '1000px'
-	}, { duration:200, easing: 'linear', });
-
-});
-
-*/
-
-/*
-$("#btnAboutMe").toggle(
-  function () {
-    $(this).css({'opacity':'1'});
-  },
-  function () {
-    $(this).css({'opacity':'0'});
-  });
-*/
 
 
 });
-
-
-
-
 
 

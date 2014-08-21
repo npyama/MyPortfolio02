@@ -97,9 +97,16 @@ footer {
   padding: 120px 30px;
   background-repeat: none;
   z-index: 49;
-  display: block;
-  height: 840px;
-  background-image: url("../images/bgAboutMe.png"); }
+  background-image: url("../images/bgAboutMe.png");
+  display: none;
+  height: 0px; }
+  #contentsAboutMe h2 {
+    font-size: 36px;
+    margin-bottom: 30px; }
+  #contentsAboutMe h3 {
+    font-size: 18px;
+    line-height: 38px;
+    margin-bottom: 5px; }
 
 /***************************
 	skill
@@ -115,8 +122,17 @@ footer {
   background-repeat: none;
   z-index: 49;
   display: block;
-  height: 840px;
-  background-image: url("../images/bgSkill.png"); }
+  height: 1400px;
+  background-image: url("../images/bgSkill.png");
+  display: none;
+  height: 840px; }
+  #contentsSkill h2 {
+    font-size: 36px;
+    margin-bottom: 30px; }
+  #contentsSkill h3 {
+    font-size: 18px;
+    line-height: 38px;
+    margin-bottom: 5px; }
 
 /***************************
 	Product
@@ -132,7 +148,16 @@ footer {
   background-repeat: none;
   z-index: 49;
   display: block;
-  height: 840px;
-  background-image: url("../images/bgProduct.png"); }
+  height: 1400px;
+  background-image: url("../images/bgProduct.png");
+  display: none;
+  height: 840px; }
+  #contentsProduct h2 {
+    font-size: 36px;
+    margin-bottom: 30px; }
+  #contentsProduct h3 {
+    font-size: 18px;
+    line-height: 38px;
+    margin-bottom: 5px; }
 
 /*# sourceMappingURL=style.css.map */
