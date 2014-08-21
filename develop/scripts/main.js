@@ -16,32 +16,31 @@ $(function(){
 });
 */
 
-
-
-
 $(function(){
-
  	$('#btnAboutMe').click(function() {
-  		$('#contentsAboutMe').slideToggle('slow', function() {
+  		$('#contentsAboutMe').slideToggle(600, 'easeInQuint' , function() {
     	// アニメーション完了後に実行したい処理
   		});
 	});
-
-
 });
 
 
+$(function(){
+ 	$('#btnSkill').click(function() {
+  		$('#contentsSkill').slideToggle(600, 'easeInQuint' , function() {
+    	// アニメーション完了後に実行したい処理
+  		});
+	});
+});
 
 
-
-
-
-
-
-
-
-
-
+$(function(){
+ 	$('#btnProduct').click(function() {
+  		$('#contentsProduct').slideToggle(600, 'easeInQuint' , function() {
+    	// アニメーション完了後に実行したい処理
+  		});
+	});
+});
 
 
 
@@ -52,7 +51,7 @@ $(function(){
 /****************************************
 	hidden URL bar
 ****************************************/
-/*
+
 
 setTimeout(function(){  window.scrollTo(0,1);},1000); 
 $(function(){
@@ -60,28 +59,23 @@ $(function(){
 });
 
 
-*/
+
 
 
 
 /****************************************
 	タップ判定
 ****************************************/
-/*
-$('img').click(function() {
+
+$('.contentsBtn').click(function() {
 	$(this).animate({ 
-	opacity: '0.3'
+	opacity: '0.7'
 	}, { duration:200, easing: 'linear', });
 	$(this).animate({ 
 	opacity: '1'
 	}, { duration:200, easing: 'linear', });
 
 });
-*/
-
-/****************************************
-	contentsToggle
-****************************************/
 
 
 

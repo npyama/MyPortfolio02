@@ -83,7 +83,9 @@ footer {
 	text-align: center;
 	background: #f00;
 	height: 160px;
+	margin-top:300px;
 	padding:20px 20px;
+	position: bottom;
 }
 
 
@@ -113,7 +115,7 @@ footer {
 .contentsFooter {
 	height:240px;
 	width:640px;
-	margin-top: -90px;	
+//	margin-top: -90px;	
 //	margin-left: auto;
 //	margin-right: auto;
 	background-image: url("../images/btnFooter.png");
@@ -123,9 +125,10 @@ footer {
 
 @mixin contentsXXX {
 	width:640px;
-	margin: -90px 0px 0px 0px;
 	padding:120px 30px;
    	background-repeat: none;
+	margin-bottom: -90px;	
+
 	h2{	
 		font-size: 36px;
 		margin-bottom: 30px; 
@@ -149,53 +152,43 @@ footer {
 	background: #ff0;
 }
 
+
 #contentsAboutMe{
 	@include contentsXXX;
-	background-image: url("../images/bgAboutMe.png");
-	z-index: 49;
-
-//CLOSE時
 	display:none;
-//	height:0px;
-//Open時
-//	display:block;
 	height:840px;
-
-
 }
 
-
-#btnAboutMe{
-	display:block;
+#contentsAboutMeBg{
+	margin-top: -90px;
+	margin-bottom:-100px;
+	background-image: url("../images/bgAboutMe.png");
 }
+
 
 
 /***************************
 	skill
 ****************************/
 #skill{
-//close時
-//	height:420px;
-//	background:#ff0;
 //open時
 	width:640px;
 	height:1260px-90px;
+	background: #ff0;
 }
+
 
 #contentsSkill{
 	@include contentsXXX;
-	display:block;
-	height:1400px;
-	background-image: url("../images/bgSkill.png");
-
-//CLOSE時
 	display:none;
-//	height:0px;
-//Open時
-//	display:block;
-	height:840px;
+	height:1400px;
 }
 
+#contentsSkillBg{
+	margin-top: -90px;
+	padding-bottom:-100px;
+	background-image: url("../images/bgSkill.png");
+}
 
 
 
@@ -203,29 +196,27 @@ footer {
 /***************************
 	Product
 ****************************/
-#product{
-
-//close時
-//	height:420px;
-//	background:#ff0;
+#aboutMe{
 //open時
 	width:640px;
 	height:1260px-90px;
+	background: #ff0;
 }
+
 
 #contentsProduct{
 	@include contentsXXX;
-	display:block;
-	height:1400px;
-	background-image: url("../images/bgProduct.png");
-
-//CLOSE時
 	display:none;
-//	height:0px;
-//Open時
-//	display:block;
-	height:840px;
+	height:1400px;
+
 }
+
+#contentsProductBg{
+	margin-top: -90px;
+	padding-bottom:-100px;
+	background-image: url("../images/bgProduct.png");
+}
+
 
 
 

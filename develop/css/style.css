@@ -57,7 +57,9 @@ footer {
   text-align: center;
   background: #f00;
   height: 160px;
-  padding: 20px 20px; }
+  margin-top: 300px;
+  padding: 20px 20px;
+  position: bottom; }
 
 /***************************
 	Contents
@@ -79,7 +81,6 @@ footer {
 .contentsFooter {
   height: 240px;
   width: 640px;
-  margin-top: -90px;
   background-image: url("../images/btnFooter.png");
   background-position: center;
   z-index: 51; }
@@ -94,11 +95,9 @@ footer {
 
 #contentsAboutMe {
   width: 640px;
-  margin: -90px 0px 0px 0px;
   padding: 120px 30px;
   background-repeat: none;
-  background-image: url("../images/bgAboutMe.png");
-  z-index: 49;
+  margin-bottom: -90px;
   display: none;
   height: 840px; }
   #contentsAboutMe h2 {
@@ -109,26 +108,26 @@ footer {
     line-height: 38px;
     margin-bottom: 5px; }
 
-#btnAboutMe {
-  display: block; }
+#contentsAboutMeBg {
+  margin-top: -90px;
+  margin-bottom: -100px;
+  background-image: url("../images/bgAboutMe.png"); }
 
 /***************************
 	skill
 ****************************/
 #skill {
   width: 640px;
-  height: 1260px-90px; }
+  height: 1260px-90px;
+  background: #ff0; }
 
 #contentsSkill {
   width: 640px;
-  margin: -90px 0px 0px 0px;
   padding: 120px 30px;
   background-repeat: none;
-  display: block;
-  height: 1400px;
-  background-image: url("../images/bgSkill.png");
+  margin-bottom: -90px;
   display: none;
-  height: 840px; }
+  height: 1400px; }
   #contentsSkill h2 {
     font-size: 36px;
     margin-bottom: 30px; }
@@ -137,21 +136,24 @@ footer {
     line-height: 38px;
     margin-bottom: 5px; }
 
+#contentsSkillBg {
+  margin-top: -90px;
+  padding-bottom: -100px;
+  background-image: url("../images/bgSkill.png"); }
+
 /***************************
 	Product
 ****************************/
-#product {
+#aboutMe {
   width: 640px;
-  height: 1260px-90px; }
+  height: 1260px-90px;
+  background: #ff0; }
 
 #contentsProduct {
   width: 640px;
-  margin: -90px 0px 0px 0px;
   padding: 120px 30px;
   background-repeat: none;
-  display: block;
-  height: 1400px;
-  background-image: url("../images/bgProduct.png");
+  margin-bottom: -90px;
   display: none;
   height: 840px; }
   #contentsProduct h2 {
@@ -161,5 +163,10 @@ footer {
     font-size: 18px;
     line-height: 38px;
     margin-bottom: 5px; }
+
+#contentsProductBg {
+  margin-top: -90px;
+  padding-bottom: -100px;
+  background-image: url("../images/bgProduct.png"); }
 
 /*# sourceMappingURL=style.css.map */
