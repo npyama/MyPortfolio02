@@ -9,13 +9,20 @@
 	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
 	<link rel="stylesheet" media="all" href="css/style.css" />	
-
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
 	<script type="text/javascript" src="scripts/jquery.easing.1.3.js"></script>
 	<script src="scripts/respond.min.js"></script>	
-
-
 	<script src="scripts/main.js"></script>	
+
+	<link rel="stylesheet" type="text/css" href="least.min.css" />
+	<script src="least.min.js"></script>
+	<script src="jquery.lazyload.js"></script>
+	<script type="text/javascript">
+	$(function(){
+		$('#gallery').least();
+	});
+	</script>
+
 </head>
 
 <body>
@@ -103,6 +110,42 @@
 				<h2>SampleText</h2>
 				<p>SampleTextSampleTextSampleTextSampleTextSampleText</p>
 				<p>SampleTextSampleTextSampleTextSampleTextSampleText</p>
+
+
+
+			<!-- - - - - - - - - - - - - -
+				js
+	 		- - - - - - - - - - - - - -->
+
+				<section>
+				<ul id="gallery">
+					<!-- start -->
+					<li id="fullPreview"></li>
+						<li><a href="images/gallery/p01.png"></a><img data-original="thumb" src="images/gallery/pThumb01.png" width="320" height="320" alt="alt" /> 
+					<div class="overLayer"></div><div class="infoLayer"><ul><li>
+						<h2>tmumb</h2></li><li>
+						<p></p></li></ul></div></li>
+					<!-- end -->
+
+				</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 			</div>
 
 			<div class="contentsFooter"></div>
