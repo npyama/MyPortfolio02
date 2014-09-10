@@ -84,9 +84,8 @@ img {
   /* @group Smallimages */
 }
 #least .least-preview {
-  background-color: whitesmoke;
-  border-bottom: 2px solid;
-  border-color: #f1f0f0;
+/*  border-bottom: 2px solid; */
+/*  border-color: #f1f0f0; */
   padding: 50px 0;
   margin-bottom: 30px;
   display: none;
@@ -113,13 +112,14 @@ img {
 #least .least-preview article {
   max-width: 960px;
   margin: 0 auto;
-  text-align: left;
+  text-align: center;
   position: relative;
   top: 20px;
-  font-family: 'Helvetica Neue', Helvetica, sans-serif;
-  font-size: 13px;
+  font-size: 14px;
   line-height: 18px;
   font-weight: 400;
+  background:none;
+
 }
 #least .least-preview article strong {
   font-weight: 800;
@@ -131,7 +131,7 @@ img {
   position: relative;
   vertical-align: top;
   display: inline-block;
-  margin: 0 10px 10px 0;
+  margin: 0 0px 0px 0;
   /* @end */
 }
 #least .least-gallery li a {
