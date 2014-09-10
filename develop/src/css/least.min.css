@@ -138,9 +138,9 @@ img {
   position: relative;
   display: block;
   text-decoration: none;
-  width: 240px;
+  width: 320px;
   /* Default width: 240px: to edit go to assets/options */
-  height: 150px;
+  height: 320px;
   /* Default height: 150px: to edit go to assets/options */
   /* @group Outline */
   -webkit-transition-property: outline-color;
@@ -163,9 +163,9 @@ img {
   /* @end */
 }
 #least .least-gallery li a img {
-  width: 240px;
+  width: 320px;
   /* Default width: 240px: to edit go to assets/options */
-  height: 150px;
+  height: 320px;
   /* Default height: 150px: to edit go to assets/options */
 }
 #least .least-gallery li a.active {
@@ -202,9 +202,13 @@ img {
 #least .least-gallery li a:hover:before {
   content: attr(data-subtitle);
   /* Default text: "View Picture" - to edit go change the attr. "data-subtitle" */
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  padding:100px 0px 0px 0px;
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 0px;
+  left: 0px;
   right: 0;
   bottom: 0;
   z-index: 2;
@@ -216,9 +220,9 @@ img {
   font-size: 15px;
   line-height: 175px;
   font-weight: 200;
-  width: 240px;
+  width: 320px;
   /* Default width: 240px: to edit go to assets/options */
-  height: 150px;
+  height: 220px;
   /* Default height: 150px: to edit go to assets/options */
   background: black;
   background: rgba(0, 0, 0, 0.5);
