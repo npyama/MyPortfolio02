@@ -42,6 +42,9 @@ a {
   -o-transition: all 1s ease-out;
   transition: all 1s ease-out; }
 
+ul {
+  list-style-type: none; }
+
 header {
   text-align: left;
   height: 100px;
@@ -107,6 +110,7 @@ footer {
   #contentsAboutMe h3 {
     font-size: 18px;
     line-height: 38px;
+    margin-top: 10px;
     margin-bottom: 5px; }
 
 #contentsAboutMeBg {
@@ -119,8 +123,37 @@ footer {
 ****************************/
 #skill {
   width: 640px;
-  height: 1260px-90px;
+  height: 1260px -90px;
   background: #fff; }
+  #skill ul {
+    margin: 40px 0px; }
+  #skill li {
+    padding: 0px 0px 20px 90px;
+    margin: 0px 10px;
+    background-size: 72px 72px;
+    background-position: 0px 0px;
+    background-repeat: no-repeat; }
+  #skill h4 {
+    font-size: 32px;
+    line-height: 40px; }
+  #skill h5 {
+    font-size: 18px; }
+  #skill .iconSkillPhotoshop {
+    background-image: url("../images/iconSkillPhotoshop.png"); }
+  #skill .iconSkillIllustrator {
+    background-image: url("../images/iconSkillIllustrator.png"); }
+  #skill .iconSkillHTML {
+    background-image: url("../images/iconSkillHTML.png"); }
+  #skill .iconSkillCSS {
+    background-image: url("../images/iconSkillCSS.png"); }
+  #skill .iconSkillJS {
+    background-image: url("../images/iconSkillJS.png"); }
+  #skill .iconSkillMaya {
+    background-image: url("../images/iconSkillMaya.png"); }
+  #skill .iconSkillUnity {
+    background-image: url("../images/iconSkillUnity.png"); }
+  #skill .iconSkillCocos {
+    background-image: url("../images/iconSkillCocos.png"); }
 
 #contentsSkill {
   width: 640px;
@@ -135,6 +168,7 @@ footer {
   #contentsSkill h3 {
     font-size: 18px;
     line-height: 38px;
+    margin-top: 10px;
     margin-bottom: 5px; }
 
 #contentsSkillBg {
@@ -164,6 +198,7 @@ footer {
   #contentsProduct h3 {
     font-size: 18px;
     line-height: 38px;
+    margin-top: 10px;
     margin-bottom: 5px; }
   #contentsProduct h2 {
     padding-left: 30px; }
