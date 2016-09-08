@@ -6,13 +6,19 @@
 
 @charset "utf-8";
 * {
-  font-family: Century Gothic,"メイリオ","Meiryo",verdana,"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",Osaka,"MSPゴシック","MS PGothic",Sans-Serif;
+  font-family:"Century","ヒラギノ明朝 Pro W3","MS P明朝",Serif;
+}
+
+html{
+	min-height: 100%;
+  	position: relative;
 }
 
 body {
 	width:100%;
-	background: #474747;
-	color: #484848;
+	min-height: 100%;
+  	background: #fff;
+	color: #888;
 	font-size: 14px;
 	font-weight:normal;
 	-webkit-text-size-adjust: 100%;
@@ -22,33 +28,30 @@ body {
 }
 
 h1 {
-	font-size: 16px;
+	font-size: 14px;
 	margin: 38px 0px 2px 10px;
 	padding: 0px 0px 0px 0px;
 }
 
 h2 {
-	font-size: 16px;
-	margin: 10px 0px 0px 5px;
+	font-size: 20px;
+	margin: 0px 0px 20px 0px;
 	padding: 0px 0px 0px 0px;
 }
 
 h3 {
-	color: #acacac;
-	font-size: 14px;
-	margin: 8px 0px 2px 5px;
-	padding: 0px 0px 0px 0px;
 }
 
 h4 {
-	color: #acacac;
+}
+
+h5 {
 	margin: 5px 0px 10px 5px;
 	padding: 0px 0px 0px 0px;
 }
 
 p {
-	font-size: 12px;
-	line-height: 19px;
+	font-size: 18px;
 	margin: 0px 0px 0px 5px;
 	padding: 0px 0px 0px 0px;
 }
@@ -81,7 +84,6 @@ a:active {
 }
 
 
-
 /******************************
 
 	header部分
@@ -90,10 +92,13 @@ a:active {
 
 #wrapperHeader{
 	width:100%;
-	background: #464646;
-    border-bottom: 3px solid rgba(225, 102, 48, 1);
+	height:auto;
+	background: #FFF;
 	overflow: hidden;
 	position: relative;
+
+	-moz-box-shadow: 0px 3px 8px #eee;  
+	-webkit-box-shadow: 0px 3px 8px #eee;
 }
 
 #header {
@@ -106,43 +111,73 @@ a:active {
 
 #title{	
 	width:100%;
-	margin: 0px 0px 0px 0px;
-	padding: 0px 0px 0px 0px;
+	margin: 0px;
+	padding: 0px;
+	display:inline;
+	float: left; 
 }
 
+#wrapperTitleLogo{
+	width:50%;
+	height:auto;
+	margin: 0px;
+	padding: 0px;
+	float: left;
+}
+
+#wrapperTitleInfo{
+	width:50%;
+	height:auto;
+	margin: 0px;
+	padding: 0px;
+	float: right;
+	text-align: right;
+}
 
 #titleLogo{
-	width:20%;
-	margin: 10px 0px 0px 10px;
+	width:75%;
+	height:auto;
+	margin: 0px;
+	padding: 0px;
 }
   
 #menu{	
 	width:100%;
-	margin: 0px 0px 0px 0px;
-	padding: 0px 0px 0px 0px;
+	margin: 0px;
+	padding: 0px;
+	position: relative;
+	clear:both;
 	display:inline;
 }
 
 #menu ul{
 	color: #efefef;
-	font-size: 12px;
-	display:inline;
-	float: right;  
+	font-size: 0;
+	width:100%;
+}
+
+#menu li{
+	width:14.28%;
+	height:auto;
+	display: inline-block;
+	position: relative;
 }
 
 .menuListBtn_01 {
-	width:12.29%;
-	height:auto;
-	padding: 0px 0px 0px 0px;
-	display:inline;
-	overflow: hidden;
-	background-image:url(../images/btnMenu_01.png);	
-	background-position: 0px -50%;
-	float: left;  
 }
 
+.menuListBtnImg{
+	width:100%;
+	margin: 0px;
+	padding: 0px;
+}
 
+.topSlider{
+	width:100%;
+	margin: 0px;
+	padding: 0px;
 
+}
 
 
 
@@ -152,568 +187,33 @@ a:active {
 
 ******************************/
 
-#wrapper_contents {  
-	width: 100%;  
-	margin: 0px 0px 0px 0px;
-	padding: 0px 0px 100px 0px;
-	background: #efefef;
-	background-image:url(../images/bg_contents.png);
-	background-repeat: repeat;
+#wrapperContents {  
+	width: 80%;  
+	height:auto;
+	margin: 1em auto 8em;
+	position: relative;
+	background: #fff;
 }  
 
 #contents {  
-	width: 850px;  
-	margin-left: auto;
-	margin-right: auto;  
+	width: 100%;
+	margin:1em  0em 15em 0em;
 	overflow: hidden;
 }  
 
+.introWrapper{
+	width: 100%;
+	margin:0;
+	position: relative;
+}
+
 .intro {
-	margin: 10px 0px 20px 0px;
-	padding: 0px 0px 0px 0px;
-
+	margin: 0px;
+	width: 90%;
+	text-align: center;
+	line-height: 300%;
 }
 
-.container {
-	width: 100%;  
-	display: -webkit-box;  
-	display: -moz-box;  
-	position: relative;
-}
-
-
-/******************************
-
-	トップページ
-
-******************************/
-
-/******************************
-	トップページ 最近の勉強会
-******************************/
-
-.recent_seminar{
-	width: 250px;  
-	height: 420px;  
-	margin: 10px 40px 0px 0px;
-	padding: 0px 0px 0px 0px;
-	overflow: hidden;
-}
-
-.recent_seminar h3 {
-	width: 200px;	
-	height: 40px;	
-	color: #484848;
-	font-size: 14px;
-	font-weight:normal;
-	margin: 10px 30px 0px 20px;
-	padding: 0px 0px 0px 0px;
-}
-
-.recent_seminar h4 {
-	width: 200px;	
-	height: 35px;	
-	color: #484848;
-	font-size: 12px;
-	font-weight:normal;
-	margin: 0px 30px 10px 20px;
-	padding: 0px 0px 0px 0px;
-	text-align:right;
-}
-
-.recent_seminar_box {
-	width: 248px;  
-	height: 80px;  
-	margin: 10px 0px 10px 0px;
-	padding: 0px 0px 0px 0px;
-	background: #efefef;
-    border: 1px solid rgba(172, 172, 172, 1);
-    border-radius: 7px;
-	opacity: 0.85;
-	overflow: hidden;
-	position: relative;
-
-}
-
-
-/******************************
-	トップページ 人気のエントリー
-******************************/
-
-.hot_entry {
-	width: 560px;  
-	height: 400px;  
-	margin: 10px 0px 0px 0px;
-	padding: 0px 0px 0px 0px;
-	overflow: hidden;
-}
-
-.container_he {
-	display: -webkit-box;  
-	display: -moz-box;  
-	position: relative;
-}
-
-
-.hot_entry_slide {
-	width: 180px;  
-	margin: 10px 0px 0px 5px;
-	padding: 0px 0px 0px 0px;	
-}
-
-
-.hot_entry_slide_thumbnail {
-	width: 180x;  
-	display: block;
-}
-
-
-
-/******************************
-
-	マイページ 
-
-******************************/
-
-/******************************
-	マイページ 投稿一覧
-******************************/
-
-.recent_post_slide {
-	width: 500px; 
-	height: 1000px;   
-	margin: 10px 40px 0px 0px;
-	padding: 0px 0px 0px 0px;
-	overflow: hidden;
-}
-
-.recent_post_slide h2 {
-	color: #484848;
-	font-size: 16px;
-	font-weight:normal;
-	margin: 0px 0px 0px 5px;
-	padding: 0px 0px 0px 0px;
-}
-
-.recent_post_slide h3 {
-	width: 250px;	
-	height: 50px;	
-	color: #484848;
-	font-size: 14px;
-	font-weight:normal;
-	margin: 0px 30px 0px 20px;
-	padding: 0px 0px 0px 0px;
-}
-
-.recent_post_slide h4 {
-	width: 250px;	
-	height: 35px;	
-	color: #484848;
-	font-size: 12px;
-	font-weight:normal;
-	margin: 0px 30px 10px 20px;
-	padding: 0px 0px 0px 0px;
-}
-
-.recent_post_slide h5 {
-	color: #484848;
-	font-size: 12px;
-	font-weight:normal;
-}
-
-.recent_post_slide p {
-	font-size: 12px;
-	font-weight:normal;
-	margin: 0px 0px 0px 0px;
-	padding: 0px 0px 0px 0px;
-	display: inline;
-}
-
-
-.mypage_h2_wrapper {
-	display: -webkit-box;  
-	display: -moz-box;  
-	position: relative;
-	margin: 50px 0px 0px 0px;
-	padding: 0px 0px 0px 0px;
-}
-
-#recent_post_slide_h2 {
-	width: 400px;  
-	margin: 0px 0px 0px 0px;
-	padding: 0px 0px 0px 0px;
-}
-
-#new_slide {
-	width: 90px;  
-	text-align: right; 
-	margin: 0px 0px 0px 0px;
-	padding: 0px 0px 0px 0px;
-}
-
-.icon_new_create {
-	margin: 0px 5px -4px 0px;
-	padding: 0px 0px 0px 0px;
-}
-
-.post_slide {
-	width: 495px;  
-	height: 150px;  
-	margin: 10px 0px 10px 0px;
-	padding: 0px 0px 0px 0px;
-	background: #efefef;
-    border: 1px solid rgba(172, 172, 172, 1);
-    border-radius: 7px;
-	opacity: 0.85;
-	overflow: hidden;
-	display: -webkit-box;  
-	display: -moz-box;  
-	position: relative;
-}
-
-
-.post_slide_desc {
-	width: 295px;	
-	margin: 25px 0px 0px 0px;
-	padding: 0px 0px 0px 0px;
-}
-
-.post_slide_thumbnail {
-	width: 201px;  
-	display: block;
-    border-radius:0px 7px 7px 0px;
-}
-
-.post_slide_desc_footer {
-	width: 300px;	
-	margin: 50px 0px 10px 150px;
-	padding: 0px 0px 0px 0px;
-	display:inline;	
-}
-
-.icon_edit {
-	margin: 0px 5px -4px 0px;
-	padding: 0px 0px 0px 0px;
-}
-
-.icon_delete {
-	margin: 0px 5px -4px 20px;
-	padding: 0px 0px 0px 0px;
-}
-
-
-
-/******************************
-	マイページ 作成した勉強会
-******************************/
-
-.recent_post_seminar {
-	width: 300px;  
-	margin: 10px 0px 0px 0px;
-	padding: 0px 0px 0px 0px;
-	overflow: hidden;
-}
-
-.recent_post_seminar h2 {
-	color: #484848;
-	font-size: 16px;
-	font-weight:normal;
-	margin: 0px 0px 0px 5px;
-	padding: 0px 0px 0px 0px;
-}
-
-.recent_post_seminar h3 {
-	width: 250px;	
-	height: 50px;	
-	color: #484848;
-	font-size: 14px;
-	font-weight:normal;
-	margin: 25px 30px 15px 20px;
-	padding: 0px 0px 0px 0px;
-}
-
-.recent_post_seminar h5 {
-	color: #484848;
-	font-size: 12px;
-	font-weight:normal;
-}
-
-.recent_post_seminar p {
-	color: #484848;
-	font-size: 12px;
-	font-weight:normal;
-	margin: 0px 0px 0px 0px;
-	padding: 0px 0px 0px 0px;
-	display: inline;
-}
-
-#recent_post_seminar_h2 {
-	width: 200px;  
-	margin: 0px 0px 0px 0px;
-	padding: 0px 0px 0px 0px;
-}
-
-#new_seminar {
-	width: 100px;  
-	margin: 3px 0px 0px 0px;
-	padding: 0px 0px 0px 0px;
-	text-align: right; 
-}
-
-.post_seminar {
-	width: 290px;  
-	height: 120px;  
-	margin: 10px 0px 20px 0px;
-	padding: 0px 0px 0px 0px;
-	background: #efefef;
-    border: 1px solid rgba(172, 172, 172, 1);
-    border-radius: 7px;
-	opacity: 0.85;
-	overflow: hidden;
-	position: relative;
-
-}
-
-
-
-
-/******************************
-
-	勉強会一覧
-
-******************************/
-
-.seminarlist_box h3 {
-	width: 750px;	
-	height: 40px;	
-	color: #484848;
-	font-size: 20px;
-	font-weight:normal;
-	margin: 10px 30px 0px 10px;
-	padding: 0px 0px 0px 0px;
-}
-
-
-
-.seminarlist_box {
-	width: 800px;  
-	height: 200px;  
-	margin: 20px 20px 20px 0px;
-	padding: 0px 0px 0px 0px;
-	background: #efefef;
-    border: 1px solid rgba(172, 172, 172, 1);
-    border-radius: 7px;
-	opacity: 0.85;
-	overflow: hidden;
-
-}
-
-.other_slide_desc {
-	width: 280px;	
-	margin: 25px 10px 0px 0px;
-	padding: 0px 0px 0px 0px;
-}
-
-.other_slide_thumbnail_1st {
-	width: 200px;  
-	display: block;
-    border-radius:0px 0px 0px 7px;
-}
-
-.other_slide_thumbnail_nst {
-	width: 200px;  
-	display: block;
-}
-
-.other_slide_thumbnail_last {
-	width: 200px;  
-	display: block;
-    border-radius:0px 0px 7px 0px;
-}
-
-
-
-
-
-/******************************
-
-	勉強会 -> スライド一覧
-
-******************************/
-
-
-
-
-
-
-
-
-
-
-/******************************
-
-	スライド詳細
-
-******************************/
-
-/******************************
-	スライド詳細　説明部分
-******************************/
-
-
-#wrapper_slide_desc h1 {
-	color: #484848;
-	font-size: 24px;
-	font-weight:bold;
-	margin: 40px 0px 0px 5px;
-	padding: 0px 0px 0px 0px;
-}
-
-#wrapper_slide_desc h2 {
-	color: #484848;
-	font-size: 16px;
-	font-weight:normal;
-	margin: 0px 0px 10px 5px;
-	padding: 0px 0px 0px 0px;
-}
-
-.slideview_leftbox {
-	width: 600px;  
-	height: 700px;  
-	margin: 10px 50px 0px 0px;
-	padding: 0px 0px 0px 0px;
-	overflow: hidden;
-}
-
-
-.slideview_rightbox {
-	width: 200px;  
-	margin: 0px 0px 0px 0px;
-	padding: 0px 0px 0px 0px;
-	overflow: hidden;
-}
-
-.slideview_rightbox h2 {
-	color: #484848;
-	font-size: 18px;
-	font-weight:normal;
-	margin: 10px 10px 0px 5px;
-	padding: 0px 0px 0px 0px;
-}
-
-.slideview_rightbox h3 {
-	color: #484848;
-	font-size: 14px;
-	font-weight:normal;
-	margin: 0px 10px 0px 5px;
-	padding: 0px 0px 0px 0px;
-}
-
-
-.other_slide h4 {
-	color: #484848;
-	font-size: 12px;
-	font-weight:normal;
-	margin: 10px 10px 0px 5px;
-	padding: 0px 0px 0px 0px;
-}
-
-.other_slide h5 {
-	color: #484848;
-	font-size: 10px;
-	font-weight:normal;
-	margin: 0px 10px 0px 5px;
-	padding: 0px 0px 0px 0px;
-}
-
-#slideview_arthur {
-	height: 50px;  
-	margin: 0px 0px 0px 0px;
-	padding: 10px 0px 0px 0px;	
-}
-
-#slideview_arthur img{
-	margin: 0px 15px -12px 15px;
-	padding: 0px 0px px 0px;
-}
-
-#slidebiew_setting {
-	height: 65px;  
-	margin: 5px 0px 0px 0px;
-	padding: 0px 0px 0px 0px;	
-}
-
-#slidebiew_setting img{
-	margin: 0px 5px -4px 0px;
-	padding: 0px 0px 0px 0px;
-}
-
-.slideview_rightbox ul {
-	color: #484848;
-	font-size: 14px;
-	font-weight:normal;
-	margin: 5px 0px 0px 0px;
-	padding: 0px 0px 0px 0px;
-	line-height: 20px;
-	list-style-type: disc;
-}
-
-.slideview_rightbox li {
-	margin: 0px 0px 0px 5px;
-	padding: 0px 0px 0px 0px;
-}
-
-#wrapper_slideview_shere{
-	margin: 60px 0px 0px 0px;
-	padding: 0px 0px 0px 0px;		
-}
-
-.slideview_shere {
-	height: 35px;  
-	margin: 0px 0px 0px 0px;
-	padding: 0px 0px 0px 0px;
-	padding: 15px 0px 0px 0px;	
-}
-
-.slideview_shere img{
-	margin: 0px 10px -10px 30px;
-}
-
-
-.other_slide {
-	width: 415px;  
-	height: 150px;  
-	margin: 10px 20px 10px 0px;
-	padding: 0px 0px 0px 0px;
-	background: #efefef;
-    border: 1px solid rgba(172, 172, 172, 1);
-    border-radius: 7px;
-	opacity: 0.85;
-	overflow: hidden;
-	display: -webkit-box;  
-	display: -moz-box;  
-	position: relative;
-}
-
-.other_slide_desc {
-	width: 205px;	
-	margin: 25px 10px 0px 0px;
-	padding: 0px 0px 0px 0px;
-}
-
-#other_slide_back  {
-	color: #484848;
-	font-size: 12px;
-	font-weight:normal;
-	margin: 10px 10px 0px 5px;
-	padding: 0px 0px 0px 0px;
-}
-
-
-#other_slide_back img{
-	margin: 0px 5px -4px 0px;
-	padding: 0px 0px 0px 0px;
-}
 
 
 
@@ -724,65 +224,124 @@ a:active {
 
 *****************************/
 
-
-
-
-#wrapper_footer {  
+#wrapperFooter {  
 	width: 100%;  
-	height:240px;
-	background: #474747;  
-	-moz-box-shadow: 0px -5px 8px #acacac;  
-	-webkit-box-shadow: 0px -5px 8px #acacac;
-    border-top: 3px solid rgba(225, 102, 48, 1);
+	height:12em;
+	background: #f6efe5;  
+	position: absolute;
+	bottom: 0;
 }  
 
-
-
-
-
-
-
 #footer {
-	width: 850px;
-	margin-left: auto;
-	margin-right: auto;  
+	width: 80%;
+	margin: 1em auto 0em;
+	text-align: center;
+	position: relative;
 }
+
+#footer h5{
+	font-size:12px;
+	display:block;
+	margin:6em auto 0em;
+}
+
+#footer p{
+	font-size:12px;
+}
+
+#footerMenu{	
+	width:100%;
+	margin: 0px;
+	padding: 0px;
+	position: relative;
+	clear:both;
+	display:inline;
+}
+
+#footerMenu ul{
+	font-size: 0;
+	width:100%;
+}
+
+#footerMenu li{
+	height:auto;
+	display: inline-block;
+	position: relative;
+}
+
+#foonterMenu p{
+	width:100%;
+	color:#000;
+	display:block;
+}
+
 
 #footer a:link { color: #8a8a8a; }
 #footer a:visited { color: #8a8a8a; }
 #footer a:hover { color: #acacac; }
 #footer a:active { color: #acacac; }
 
-#footer hr {
-    border: 0px;
-    height: 0px;
-	margin: 0px 0px 0px 0px;
-	padding: 0px 0px 0px 0px;
-    border-top: 1px solid rgba(48, 48, 48, 1);
-    border-bottom: 1px solid rgba(96, 96, 96, 1);
+
+
+
+
+
+/******************************
+
+	パーツ
+
+******************************/
+
+
+.clearfix { zoom: 1; }
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
 }
 
-#footer ul{
-	margin: 5px 0px 0px 20px;
-	padding: 0px 0px 0px 0px;
+.dn{
+	display:none;
 }
 
-#footer li{
-	color: #acacac;
-	font-size: 12px;
-	line-height: 20px;
-	list-style-type: disc;
-}
+.center { margin: 0 auto!important; }
 
-#footer li:hover {
-	color: #e16630;
-	font-size: 12px;
-	line-height: 20px;
-	list-style-type: disc;
-}
+.txtC { text-align: center;}
+.txtL { text-align: left;}
+.txtL { text-align: right;}
 
-.footer_box {
-	width: 190px;
-	margin: 20px 30px 20px 0px;
-	padding: 0px 0px 0px 0px;
-}
+
+.m0    { margin: 0px !important; }
+.m5    { margin: 5px !important; }
+.m10   { margin: 10px !important; }
+.m15   { margin: 15px !important; }
+.m20   { margin: 20px !important; }
+.ml0   { margin-left: 0px !important; }
+.ml5   { margin-left: 5px !important; }
+.ml10  { margin-left: 10px !important; }
+.ml15  { margin-left: 15px !important; }
+.ml20  { margin-left: 20px !important; }
+.mr0   { margin-right: 0px !important; }
+.mr5   { margin-right: 5px !important; }
+.mr10  { margin-right: 10px !important; }
+.mr15  { margin-right: 15px !important; }
+.mr20  { margin-right: 20px !important; }
+.mt0   { margin-top: 0px !important; }
+.mt5   { margin-top: 5px !important; }
+.mt10  { margin-top: 10px !important; }
+.mt15  { margin-top: 15px !important; }
+.mt20  { margin-top: 20px !important; }
+.mb0   { margin-bottom: 0px !important; }
+.mb5   { margin-bottom: 5px !important; }
+.mb10  { margin-bottom: 10px !important; }
+.mb15  { margin-bottom: 15px !important; }
+.mb20  { margin-bottom: 20px !important; }
+.mtb5 {margin: 5px 0px 5px 0px; }
+.mtb10 {margin: 10px 0px 10px 0px; }
+.mtb15 {margin: 15px 0px 15px 0px; }
+.mtb20 {margin: 20px 0px 20px 0px; }
+.mlr5 {margin: 0px 5px 0px 5px; }
+.mlr10 {margin: 0px 10px 0px 10px; }
+.mlr15 {margin: 0px 15px 0px 15px; }
+.mlr20 {margin: 0px 20px 0px 20px; }
+
