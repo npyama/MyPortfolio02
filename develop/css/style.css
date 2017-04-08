@@ -3,33 +3,42 @@
 */
 /* IMPORT 12 COLUMN RESPONSIVE GS */
 @import url("responsive.gs.24col.css");
-/* INPORT WEB FONT */
+
+/* INPORT WEB FONT  */
 @import url(http://fonts.googleapis.com/css?family=Raleway:100);
+
 /* INPORT FONT M+*/
 @font-face {
   font-family: mplus-1p-thin;
   src: url("http://mplus-fonts.sourceforge.jp/webfonts/mplus-1p-thin.ttf") format("truetype"); }
-/***************************
-	SNIPPET
-****************************/
-/* ベンダープレフィックス 
-　　記述例 @include css3(transition, 0.5s);　*/
+
 /***************************
 	ALL SETTING 
 ****************************/
+h1 {
+  font-family:"Raleway",mplus-1p-thin;  
+}
+
+h2 {
+  font-family:"Raleway",mplus-1p-thin;  
+}
+
+
 body {
-  font-size: 14px;
+  font-size: 16px;
   width: 640px;
-  font-family: 'Raleway', mplus-1p-thin, cursive;
-  color: black; }
+  font-family:"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka;
+  color: black; 
+}
 
 h1, h2, h3, h4, h5, h6 {
   letter-spacing: 1px;
   margin: 0px;
   padding: 0px; }
 
+
 p {
-  font-size: 14px;
+  font-size: 16px;
   letter-spacing: 1px;
   margin: 0px;
   padding: 0px; }
@@ -48,7 +57,7 @@ ul {
 
 header {
   text-align: left;
-  height: 100px;
+  height: 150px;
   padding: 20px 20px;
   background: #fff; }
   header h1 {
@@ -62,7 +71,7 @@ footer {
   text-align: center;
   background: #fff;
   height: 160px;
-  margin-top: 300px;
+  margin-top: 100px;
   padding: 20px 20px;
   position: bottom; }
 
@@ -95,28 +104,29 @@ footer {
 ****************************/
 #aboutMe {
   width: 640px;
-  height: 1260px-90px;
   background: #fff; }
 
 #contentsAboutMe {
   width: 640px;
-  padding: 120px 30px;
+  padding: 120px 30px 120px;
   background-repeat: none;
   margin-bottom: -90px;
   display: none;
-  height: 840px; }
+  height: 1400px; }
   #contentsAboutMe h2 {
     font-size: 36px;
     margin-bottom: 30px; }
   #contentsAboutMe h3 {
     font-size: 18px;
     line-height: 38px;
-    margin-top: 10px;
+    margin-top: 30px;
     margin-bottom: 5px; }
+  #contentsAboutMe p {
+    line-height: 28px;
+ }
 
 #contentsAboutMeBg {
   margin-top: -90px;
-  margin-bottom: -100px;
   background-image: url("../images/bgAboutMe.png"); }
 
 /***************************
@@ -124,7 +134,6 @@ footer {
 ****************************/
 #skill {
   width: 640px;
-  height: 1260px -90px;
   background: #fff; }
   #skill ul {
     margin: 40px 0px; }
@@ -174,7 +183,6 @@ footer {
 
 #contentsSkillBg {
   margin-top: -90px;
-  padding-bottom: -100px;
   background-image: url("../images/bgSkill.png"); }
 
 /***************************
@@ -182,7 +190,6 @@ footer {
 ****************************/
 #product {
   width: 640px;
-  height: 1260px-90px;
   background: #fff; }
 
 #contentsProduct {
@@ -191,7 +198,7 @@ footer {
   background-repeat: none;
   margin-bottom: -90px;
   display: none;
-  height: 1400px;
+  height: 2800px;
   padding: 120px 0px; }
   #contentsProduct h2 {
     font-size: 36px;
@@ -208,10 +215,138 @@ footer {
 
 #contentsProductBg {
   margin-top: -90px;
-  padding-bottom: -100px;
   background-image: url("../images/bgProduct.png"); }
 
 #least {
-  margin-top: 40px; }
+  margin-top: 40px; 
+  margin-bottom: 1040px; }
 
-/*# sourceMappingURL=style.css.map */
+
+
+/***************************
+  Items
+****************************/
+.rdstr {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.fwb { font-weight: bold !important; }
+
+.tal { text-align: left !important; }
+.tar { text-align: right !important; }
+.tac { text-align: center !important; }
+.img_cen { display: block; text-align: center !important; margin:0 auto  !important;}
+
+.bold { font-weight: bold;} 
+.u_line { text-decoration: underline; }
+
+.tca { color: #ff0000 !important; }
+
+.dn         { display: none !important; }
+.db         { display: block !important; }
+.dib        { display: inline-block !important; }
+.table      { display: table !important; }
+.table_row  { display: table-row !important; }
+.table_cell { display: table-cell !important; }
+
+.o0 {
+  opacity: 0 !important;
+  filter: alpha(opacity=0) !important;
+  -ms-filter: "alpha(opacity=0)" !important;
+  -moz-opacity: 0 !important;
+  -khtml-opacity: 0 !important;
+}
+
+.fl { float: left !important; }
+.fr { float: right !important; }
+
+.pr { position: relative !important; }
+.pa { position: absolute !important; }
+
+.bn  { border: none !important; }
+.btn { border-top: none !important; }
+.bbn { border-bottom: none !important; }
+.bln { border-left: none !important; }
+.brn { border-right: none !important; }
+
+.z1 { z-index: 1 !important; }
+
+.m0    { margin: 0px !important; }
+.m5    { margin: 5px !important; }
+.m10   { margin: 10px !important; }
+.m15   { margin: 15px !important; }
+.m20   { margin: 20px !important; }
+.ml0   { margin-left: 0px !important; }
+.ml5   { margin-left: 5px !important; }
+.ml10  { margin-left: 10px !important; }
+.ml15  { margin-left: 15px !important; }
+.ml20  { margin-left: 20px !important; }
+.ml25  { margin-left: 25px !important; }
+.ml30  { margin-left: 30px !important; }
+.ml35  { margin-left: 35px !important; }
+.ml40  { margin-left: 40px !important; }
+.ml45  { margin-left: 45px !important; }
+.ml50  { margin-left: 50px !important; }
+.ml60  { margin-left: 60px !important; }
+.ml70  { margin-left: 70px !important; }
+.ml80  { margin-left: 80px !important; }
+.ml90  { margin-left: 90px !important; }
+.ml100 { margin-left: 100px !important; }
+.mr0   { margin-right: 0px !important; }
+.mr5   { margin-right: 5px !important; }
+.mr10  { margin-right: 10px !important; }
+.mr15  { margin-right: 15px !important; }
+.mr20  { margin-right: 20px !important; }
+.mr25  { margin-right: 25px !important; }
+.mr30  { margin-right: 30px !important; }
+.mr35  { margin-right: 35px !important; }
+.mr40  { margin-right: 40px !important; }
+.mr45  { margin-right: 45px !important; }
+.mr50  { margin-right: 50px !important; }
+.mr60  { margin-right: 60px !important; }
+.mr70  { margin-right: 70px !important; }
+.mr80  { margin-right: 80px !important; }
+.mr90  { margin-right: 90px !important; }
+.mr100 { margin-right: 100px !important; }
+.mt0   { margin-top: 0px !important; }
+.mt5   { margin-top: 5px !important; }
+.mt10  { margin-top: 10px !important; }
+.mt15  { margin-top: 15px !important; }
+.mt20  { margin-top: 20px !important; }
+.mt25  { margin-top: 25px !important; }
+.mt30  { margin-top: 30px !important; }
+.mt35  { margin-top: 35px !important; }
+.mt40  { margin-top: 40px !important; }
+.mt45  { margin-top: 45px !important; }
+.mt50  { margin-top: 50px !important; }
+.mt60  { margin-top: 60px !important; }
+.mt70  { margin-top: 70px !important; }
+.mt80  { margin-top: 80px !important; }
+.mt90  { margin-top: 90px !important; }
+.mt100 { margin-top: 100px !important; }
+.mb0   { margin-bottom: 0px !important; }
+.mb5   { margin-bottom: 5px !important; }
+.mb10  { margin-bottom: 10px !important; }
+.mb15  { margin-bottom: 15px !important; }
+.mb20  { margin-bottom: 20px !important; }
+.mb25  { margin-bottom: 25px !important; }
+.mb30  { margin-bottom: 30px !important; }
+.mb35  { margin-bottom: 35px !important; }
+.mb40  { margin-bottom: 40px !important; }
+.mb45  { margin-bottom: 45px !important; }
+.mb50  { margin-bottom: 50px !important; }
+.mb60  { margin-bottom: 60px !important; }
+.mb70  { margin-bottom: 70px !important; }
+.mb80  { margin-bottom: 80px !important; }
+.mb90  { margin-bottom: 90px !important; }
+.mb100 { margin-bottom: 100px !important; }
+.mh0    { margin-left: 0px !important; margin-right: 0px !important; }
+.mh5    { margin-left: 5px !important; margin-right: 5px !important; }
+.mh10   { margin-left: 10px !important; margin-right: 10px !important; }
+.mh15   { margin-left: 15px !important; margin-right: 15px !important; }
+.mh20   { margin-left: 20px !important; margin-right: 20px !important; }
+.mhauto { margin-left: auto !important; margin-right: auto !important; }
+
+

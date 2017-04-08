@@ -112,10 +112,10 @@ img {
 #least .least-preview article {
   max-width: 960px;
   margin: 0 auto;
-  text-align: center;
+  text-align: left;
   position: relative;
   top: 20px;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 18px;
   font-weight: 400;
   background:none;
