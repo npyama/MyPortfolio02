@@ -1,0 +1,4 @@
+@import url("pc.css") screen and (min-width:1367px);
+@import url("pc_hd.css") screen and (min-width:769px) and (max-width:1366px);
+@import url("tb.css") screen and (min-width:641px) and (max-width:768px);
+@import url("sp.css") screen and (max-width:640px);
