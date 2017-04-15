@@ -1,3 +1,5 @@
+@charset "UTF-8";
+/* CSS Document */
 
 /* INPORT WEB FONT  */
 @import url(http://fonts.googleapis.com/css?family=Raleway:100);
@@ -13,59 +15,70 @@
 /***************************
 	ALL SETTING 
 ****************************/
-body{
-}
 
 body {
   font-size: 16px;
-  width: ;
   font-family:"Roboto Slab" , Garamond , "Times New Roman" , "游明朝" , "Yu Mincho" , "游明朝体" , "YuMincho" , "ヒラギノ明朝 Pro W3" , "Hiragino Mincho Pro" , "HiraMinProN-W3" , "HGS明朝E" , "ＭＳ Ｐ明朝" , "MS PMincho" , serif;
   color: black; 
+  width:100%;
+  background-color:#eee;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  overflow-x: hidden;
 }
 
 h1, h2, h3, h4, h5, h6 {
   letter-spacing: 1px;
   margin: 0px;
-  padding: 0px; }
+  padding: 0px;
+}
 
+h1{ font-size: 32px; }
+h2{ font-size: 24px; }
+h3{ font-size: 24px; }
+h4{ font-size: 18px; }
 
 p {
-  font-size: 16px;
+  font-size: 18px;
   letter-spacing: 1px;
   margin: 0px;
-  padding: 0px; }
+  padding: 0px; 
+}
 
 a {
-  text-decoration: none;
   color: #000;
   -webkit-transition: all 1s ease-out;
   -moz-transition: all 1s ease-out;
   -ms-transition: all 1s ease-out;
   -o-transition: all 1s ease-out;
-  transition: all 1s ease-out; }
+  transition: all 1s ease-out; 
+}
 
 ul {
   list-style-type: none; }
 
 header {
-  text-align: left;
-  height: 150px;
-  padding: 20px 20px;
-  background: #fff; }
-  header h1 {
-    font-size: 48px; }
+  max-width: 1600px;
+  margin:0 auto;
+  overflow: hidden;
+}
 
-article {
-  margin: 0px;
-  background: #fff; }
+article{
+  max-width: 1600px;
+  margin:0 auto;
+  overflow: hidden;
+}
 
 footer {
-  text-align: center;
-  background: #fff;
+  max-width: 1600px;
+  margin:0 auto;
+  overflow: hidden;
   height: 160px;
+  position: bottom;
+  background: #fff;
+  text-align: center;
   margin-top: 100px;
-  padding: 20px 20px;
-  position: bottom; }
+}
 
 /***************************
 	Contents
