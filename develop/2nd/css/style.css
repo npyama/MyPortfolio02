@@ -1,33 +1,25 @@
-/* IMPORT RESET 
-@import url("reset.css");
-*/
-/* IMPORT 12 COLUMN RESPONSIVE GS */
-@import url("responsive.gs.24col.css");
 
 /* INPORT WEB FONT  */
 @import url(http://fonts.googleapis.com/css?family=Raleway:100);
+@import url(//fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700);
 
 /* INPORT FONT M+*/
 @font-face {
   font-family: mplus-1p-thin;
   src: url("http://mplus-fonts.sourceforge.jp/webfonts/mplus-1p-thin.ttf") format("truetype"); }
 
+
+
 /***************************
 	ALL SETTING 
 ****************************/
-h1 {
-  font-family:"Raleway",mplus-1p-thin;  
+body{
 }
-
-h2 {
-  font-family:"Raleway",mplus-1p-thin;  
-}
-
 
 body {
   font-size: 16px;
-  width: 640px;
-  font-family:"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka;
+  width: ;
+  font-family:"Roboto Slab" , Garamond , "Times New Roman" , "游明朝" , "Yu Mincho" , "游明朝体" , "YuMincho" , "ヒラギノ明朝 Pro W3" , "Hiragino Mincho Pro" , "HiraMinProN-W3" , "HGS明朝E" , "ＭＳ Ｐ明朝" , "MS PMincho" , serif;
   color: black; 
 }
 

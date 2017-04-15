@@ -1,0 +1,40 @@
+@charset "UTF-8";
+/* CSS Document */
+/*--------------------------------------------------------------------------------
+  All Settings
+--------------------------------------------------------------------------------*/
+
+	.install_btn{
+		display:none !important;
+	}
+
+	.install_btn_2{
+		display:none !important;
+	}
+
+
+	.qr_code{
+		position: absolute;
+		width: 40%;
+		left: 30%;
+		top: 41.3%;
+	}
+
+	.qr_code_2{
+		width: 40%;
+		margin: 0 30% 30px 30%;
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
