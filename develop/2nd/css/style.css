@@ -11,7 +11,6 @@
   src: url("http://mplus-fonts.sourceforge.jp/webfonts/mplus-1p-thin.ttf") format("truetype"); }
 
 
-
 /***************************
 	ALL SETTING 
 ****************************/
@@ -27,23 +26,20 @@ body {
   overflow-x: hidden;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6,p {
   letter-spacing: 1px;
   margin: 0px;
   padding: 0px;
+  line-height: 100%;
 }
 
 h1{ font-size: 32px; }
 h2{ font-size: 24px; }
-h3{ font-size: 24px; }
+h3{ font-size: 32px; }
 h4{ font-size: 18px; }
-
-p {
-  font-size: 18px;
-  letter-spacing: 1px;
-  margin: 0px;
-  padding: 0px; 
-}
+h5{ font-size: 18px; }
+h6{ font-size: 18px; }
+p { font-size: 16px;   line-height: 110%;}
 
 a {
   color: #000;
@@ -54,183 +50,680 @@ a {
   transition: all 1s ease-out; 
 }
 
-ul {
-  list-style-type: none; }
+ul { list-style-type: none; }
+li { font-size: 16px;   line-height: 120%;}
 
+
+
+/***************************
+  header
+****************************/
+@media(max-width: 1600px) and (min-width: 1030px){/*PC*/
 header {
-  max-width: 1600px;
+  max-width: 100%;
   margin:0 auto;
+  background-image: url("../images/headerBg.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size:cover;
+  -moz-background-size:cover;
+  -webkit-background-size:cover;
+  -o-background-size:cover;
+  -ms-background-size:cover;  
   overflow: hidden;
 }
 
-article{
-  max-width: 1600px;
+
+#headerContainer {
+  max-width: 1024px;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+#headerText01 {
+  display: block;
+  width: 25%; 
+  margin: 10% auto 0;
+}
+
+
+#headerLogo {
+  display: block;
+  width:13%;  
+  margin: 12% auto 12%;
+}
+
+#headerText02 {
+  display: block;
+  width:9%;  
+  margin: 0 auto 4%;
+}
+}
+
+@media(min-width: 1600px){/*LargePC*/
+header {
+  max-width: 100%;
   margin:0 auto;
+  background-image: url("../images/headerBg.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size:cover;
+  -moz-background-size:cover;
+  -webkit-background-size:cover;
+  -o-background-size:cover;
+  -ms-background-size:cover;  
   overflow: hidden;
 }
 
-footer {
-  max-width: 1600px;
-  margin:0 auto;
-  overflow: hidden;
-  height: 160px;
-  position: bottom;
-  background: #fff;
-  text-align: center;
-  margin-top: 100px;
+
+#headerContainer {
+  max-width: 1024px;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
 }
+
+#headerText01 {
+  display: block;
+  width: 30%; 
+  margin: 15% auto 0;
+}
+
+
+#headerLogo {
+  display: block;
+  width:20%;  
+  margin: 20% auto 20%;
+}
+
+#headerText02 {
+  display: block;
+  width:13%;  
+  margin: 0 auto 4%;
+}
+}
+
+
+@media (max-width: 1030px) and (min-width: 768px){/*タブレット*/
+
+
+}
+
+@media (max-width: 767px) {/*スマホ*/
+header {
+  max-width: 100%;
+  margin:0 auto;
+  background-image: url("../images/headerBg.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size:cover;
+  -moz-background-size:cover;
+  -webkit-background-size:cover;
+  -o-background-size:cover;
+  -ms-background-size:cover;  
+  overflow: hidden;
+}
+
+
+#headerContainer {
+  max-width: 1024px;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+#headerText01 {
+  display: block;
+  width: 45%; 
+  margin: 25% auto 0;
+}
+
+
+#headerLogo {
+  display: block;
+  width:30%;  
+  margin: 25% auto 30%;
+}
+
+#headerText02 {
+  display: block;
+  width:20%;  
+  margin: 0 auto 5%;
+}
+}
+
+
+
+
 
 /***************************
 	Contents
 ****************************/
-.contentsBtn {
+
+article{
+  max-width: 100%;
+  margin:0 auto;
+  overflow: hidden;
+}
+
+.contentContainer {
+  position: relative;
+  overflow: hidden;
+  max-width: 1600px;
+  height: auto;
+  margin:0 auto;
+}
+
+.contentContainer h3 {
+  text-align: center;
+  margin:10px auto 50px ;  
+}
+
+.column2Wrapper{
+  position: relative;
+  width: 90%;
+  height: 100%;
+  margin: 0px 5% 0px 5%;
+  padding: 0px;
+}
+
+.column2Container{
+  position: relative;
+  display: inline-block;
+  width: 49%;
+  height: auto;
+  margin: 0px;
+  padding: 0px;
+  vertical-align: middle;
+}
+
+
+.column4Wrapper{
+  position: relative;
+  width: 90%;
+  height: 100%;
+  margin: 0px 5% 0px 5%;
+  padding: 0px;
+}
+
+.column4Container{
+  position: relative;
+  display: inline-block;
+  width: 24.5%;
+  height: auto;
+  margin: 0px;
+  padding: 0px;
+  vertical-align: middle;
+}
+
+
+@media(max-width: 1600px) and (min-width: 1030px){/*PC*/
+}
+
+@media (max-width: 1030px) and (min-width: 768px){/*タブレット*/
+}
+
+@media (max-width: 767px) {/*スマホ*/
+.column2Container{
+  position: relative;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 90px;
-  z-index: 53; }
+  width: 100%;
+  height: auto;
+  margin: 0px;
+  padding: 0px;
+  vertical-align: middle;
+}
+.column4Container{
+  position: relative;
+  display: inline-block;
+  width: 49%;
+  height: auto;
+  margin: 0px;
+  padding: 0px;
+  vertical-align: middle;
+}
+}
 
-.contentsHeader {
-  height: 270px;
-  width: 640px;
-  margin-top: -270px;
-  background-image: url("../images/btnHeader.png");
-  z-index: 55; }
 
-.contentsFooter {
-  height: 240px;
-  width: 640px;
-  background-image: url("../images/btnFooter.png");
-  background-position: center;
-  z-index: 51; }
 
-/***************************
-	aboutMe
-****************************/
-#aboutMe {
-  width: 640px;
-  background: #fff; }
 
-#contentsAboutMe {
-  width: 640px;
-  padding: 120px 30px 120px;
-  background-repeat: none;
-  margin-bottom: -90px;
-  display: none;
-  height: 1400px; }
-  #contentsAboutMe h2 {
-    font-size: 36px;
-    margin-bottom: 30px; }
-  #contentsAboutMe h3 {
-    font-size: 18px;
-    line-height: 38px;
-    margin-top: 30px;
-    margin-bottom: 5px; }
-  #contentsAboutMe p {
-    line-height: 28px;
- }
 
-#contentsAboutMeBg {
-  margin-top: -90px;
-  background-image: url("../images/bgAboutMe.png"); }
 
 /***************************
-	skill
+  concept
 ****************************/
-#skill {
-  width: 640px;
-  background: #fff; }
-  #skill ul {
-    margin: 40px 0px; }
-  #skill li {
-    padding: 0px 0px 20px 90px;
-    margin: 0px 10px;
-    background-size: 72px 72px;
-    background-position: 0px 0px;
-    background-repeat: no-repeat; }
-  #skill h4 {
-    font-size: 32px;
-    line-height: 40px; }
-  #skill h5 {
-    font-size: 18px; }
-  #skill .iconSkillPhotoshop {
-    background-image: url("../images/iconSkillPhotoshop.png"); }
-  #skill .iconSkillIllustrator {
-    background-image: url("../images/iconSkillIllustrator.png"); }
-  #skill .iconSkillHTML {
-    background-image: url("../images/iconSkillHTML.png"); }
-  #skill .iconSkillCSS {
-    background-image: url("../images/iconSkillCSS.png"); }
-  #skill .iconSkillJS {
-    background-image: url("../images/iconSkillJS.png"); }
-  #skill .iconSkillMaya {
-    background-image: url("../images/iconSkillMaya.png"); }
-  #skill .iconSkillUnity {
-    background-image: url("../images/iconSkillUnity.png"); }
-  #skill .iconSkillCocos {
-    background-image: url("../images/iconSkillCocos.png"); }
+#concept {
+  position: relative;
+  max-width: 100%;
+  height: auto;
+  margin-top:100px;
+  margin-bottom:100px;
+}
+ 
+#concept h4{
+  text-align: center;
+  line-height: 150%;
+  margin: -20px 0 50px ;
+}
 
-#contentsSkill {
-  width: 640px;
-  padding: 120px 30px;
-  background-repeat: none;
-  margin-bottom: -90px;
-  display: none;
-  height: 1400px; }
-  #contentsSkill h2 {
-    font-size: 36px;
-    margin-bottom: 30px; }
-  #contentsSkill h3 {
-    font-size: 18px;
-    line-height: 38px;
-    margin-top: 10px;
-    margin-bottom: 5px; }
+#concept h5{
+  line-height: 150%;
+  margin: 0 0 1.3em;
+}
 
-#contentsSkillBg {
-  margin-top: -90px;
-  background-image: url("../images/bgSkill.png"); }
+#concept p{
+  line-height: 120%;
+  margin: 0 0 1.2em;
+}
+
+
+#conceptIcon{
+  display:block;
+  width: 50%;
+  height: auto;
+  margin:0 0 0 30%;
+  padding:0;
+}
+
+@media(max-width: 1600px) and (min-width: 1030px){/*PC*/
+}
+
+@media (max-width: 1030px) and (min-width: 768px){/*タブレット*/
+}
+
+@media (max-width: 767px) {/*スマホ*/
+ 
+#concept h4{
+  font-size: 18px;
+  text-align: center;
+  line-height: 150%;
+  margin: -20px 0 50px ;
+}
+
+#concept h5{
+  font-size: 18px;
+  font-weight: bold;  
+  line-height: 150%;
+  margin: 0 0 3em ;
+}
+
+#concept p{
+  line-height: 120%;
+  margin: 0 0 1.2em;
+}
+
+
+#conceptIcon{
+  display:block;
+  width: 40%;
+  height: auto;
+  margin:15% auto 15% ;
+  padding:0;
+}}
+
+
+
+
+
 
 /***************************
-	Product
+  product
 ****************************/
+
 #product {
-  width: 640px;
-  background: #fff; }
+  position: relative;
+  max-width: 100%;
+  height: auto;
+  margin-top:100px;
+  margin-bottom:100px;
+}
 
-#contentsProduct {
-  width: 640px;
-  padding: 120px 30px;
-  background-repeat: none;
-  margin-bottom: -90px;
-  display: none;
-  height: 2800px;
-  padding: 120px 0px; }
-  #contentsProduct h2 {
-    font-size: 36px;
-    margin-bottom: 30px; }
-  #contentsProduct h3 {
-    font-size: 18px;
-    line-height: 38px;
-    margin-top: 10px;
-    margin-bottom: 5px; }
-  #contentsProduct h2 {
-    padding-left: 30px; }
-  #contentsProduct p {
-    padding-left: 30px; }
+#product h4{
+  text-align: center;
+  line-height: 150%;
+  margin: -20px 0 50px ;
+}
 
-#contentsProductBg {
-  margin-top: -90px;
-  background-image: url("../images/bgProduct.png"); }
+.galleryImgS{
+  width: 96%;
+  height: auto;
+  margin:0 0 4% 0;
+  padding:0;
+}
 
-#least {
-  margin-top: 40px; 
-  margin-bottom: 1040px; }
+@media(max-width: 1600px) and (min-width: 1030px){/*PC*/
+}
+
+@media (max-width: 1030px) and (min-width: 768px){/*タブレット*/
+}
+
+@media (max-width: 767px) {/*スマホ*/
+}
+
+
+
+
+
+
+/***************************
+  skill
+****************************/
+
+#skill {
+  position: relative;
+  max-width: 100%;
+  height: auto;
+  margin-top:100px;
+  margin-bottom:50px;
+}
+
+#skill h4{
+  text-align: center;
+  line-height: 150%;
+  margin: -20px 0 50px ;
+}
+
+#skill h5{
+font-family:"游明朝" , "Yu Mincho" , "游明朝体" , "YuMincho" , "ヒラギノ明朝 Pro W3" , "Hiragino Mincho Pro" , "HiraMinProN-W3" , "HGS明朝E" , "ＭＳ Ｐ明朝" , "MS PMincho" , serif;
+ text-align: center;
+  line-height: 150%;
+  margin: 0px 0 0px ;
+}
+
+#skill h6{
+  text-align: center;
+  line-height: 150%;
+  margin: 0px 0 0px ;
+}
+
+#skill p{
+  height:4em;
+  text-align: center;
+  line-height: 110%;
+  margin: 1.5em 0 3em;
+}
+
+#skill span{
+  color:#f39800;
+}
+
+.skillIcon{
+  display:block;
+  width: 30%;
+  text-align: center;
+  height: auto;
+  margin: 7% auto 7%;
+  padding:0;
+}
+
+@media(max-width: 1600px) and (min-width: 1030px){/*PC*/
+}
+
+@media (max-width: 1030px) and (min-width: 768px){/*タブレット*/
+}
+
+@media (max-width: 767px) {/*スマホ*/
+.skillIcon{
+  display:block;
+  width: 40%;
+  text-align: center;
+  height: auto;
+  margin: 7% auto 7%;
+  padding:0;
+}
+
+#skill h5{
+  font-size: 32px;
+  font-family:"游明朝" , "Yu Mincho" , "游明朝体" , "YuMincho" , "ヒラギノ明朝 Pro W3" , "Hiragino Mincho Pro" , "HiraMinProN-W3" , "HGS明朝E" , "ＭＳ Ｐ明朝" , "MS PMincho" , serif;
+  text-align: center;
+  line-height: 150%;
+  margin: 0px 0 0px ;
+}
+
+#skill h6{
+  font-size: 26px;
+  text-align: center;
+  line-height: 150%;
+  margin: 0px 0 0px ;
+}
+
+
+#skill p{
+  height:4em;
+  text-align: center;
+  line-height: 110%;
+  margin: 1.5em 0 5em;
+}
+}
+
+
+
+
+
+
+/***************************
+  profile
+****************************/
+#profile {
+  position: relative;
+  max-width: 100%;
+  height: auto;
+  margin-top:100px;
+  margin-bottom:100px;
+}
+ 
+#profile h4{
+  text-align: center;
+  line-height: 150%;
+  margin: -20px 0 30px ;
+}
+
+#profile h5{
+  line-height: 150%;
+  margin: 0 0 0.5em ;
+}
+
+#profile p{
+  text-align: center;
+  line-height: 120%;
+  margin: 0;
+}
+
+#profile .columnItem{
+  width:80%;
+  margin:0 10% 0 10%;
+}
+
+#profile li {
+  font-size: 14px;  
+  line-height: 120%;
+}
+
+
+#profileIcon{
+  display: block;
+  width: 17%;
+  height: auto;
+  margin:0 auto;
+  padding:0;
+}
+
+.profileText{
+  margin:30px auto 50px;
+  padding:0;
+}
+
+.profileTitle{
+  display: block;
+  width: 20%;
+  height: auto;
+  margin:10px auto 20px;
+  padding:0;
+}
+
+@media(max-width: 1600px) and (min-width: 1030px){/*PC*/
+}
+
+@media (max-width: 1030px) and (min-width: 768px){/*タブレット*/
+}
+
+@media (max-width: 767px) {/*スマホ*/
+
+#profile h5{
+  text-align: center;
+  font-size: 32px;  
+  line-height: 150%;
+  margin: 1.5em 0 0.5em ;
+}
+
+
+#profile p{
+  font-size: 16px;  
+  text-align: center;
+  line-height: 130%;
+}
+
+#profile .columnItem{
+  width:100%;
+  margin:0 0 0 0;
+}
+
+#profile li {
+  font-size: 20px;  
+  line-height: 120%;
+}
+
+#profileIcon{
+  display: block;
+  width: 20%;
+  height: auto;
+  margin:10% auto;
+  padding:0;
+}
+
+.profileText{
+  margin:30px auto 80px;
+  padding:0;
+}
+
+.profileTitle{
+  display: block;
+  width: 25%;
+  height: auto;
+  margin:100px auto 20px;
+  padding:0;
+}
+}
+
+
+
+
+
+/***************************
+  Footer
+****************************/
+footer {
+  max-width: 100%;
+  margin:0 auto;
+  height: 160px;
+  position: relative; 
+  background: #82ae46;
+  margin-top: 100px;
+}
+
+#footerContainer{
+  position: absolute;
+  bottom:0;
+  width: 100%;
+  text-align: center;
+}
+
+footer h5{
+  text-align: center;
+  margin:2em auto 1em;
+}
+
+
+footer ul{
+  text-align: center;
+}
+
+
+footer li{
+  font-size: 18px; 
+  font-weight: bold;
+  display: inline;
+}
+
+#footerBtn{
+  display: block;
+  text-align: center;  
+  position:absolute;
+  width: 80px;
+  height: auto;
+  top:-40px;
+  left:47%;
+}
+
+@media(max-width: 1600px) and (min-width: 1030px){/*PC*/
+}
+
+@media (max-width: 1030px) and (min-width: 768px){/*タブレット*/
+}
+
+@media (max-width: 767px) {/*スマホ*/
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width: 1600px) and (min-width: 1030px){/*PC*/
+}
+
+@media (max-width: 1030px) and (min-width: 768px){/*タブレット*/
+}
+
+@media (max-width: 767px) {/*スマホ*/
+}
+
+
+
+
 
 
 
 /***************************
   Items
 ****************************/
+
+.clearfix/*,#container*/ { overflow: hidden; }
+
+/*clearfix*/
+.clear:after {
+  font-size:100%;
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.clear { display: inline-table; zoom: 1; }
+* html .clear { height: 1%; }
+
+
 .rdstr {
   white-space: nowrap;
   overflow: hidden;
@@ -262,6 +755,11 @@ footer {
   -ms-filter: "alpha(opacity=0)" !important;
   -moz-opacity: 0 !important;
   -khtml-opacity: 0 !important;
+}
+.dn { 
+  display: none !important; 
+  opacity: 0;
+
 }
 
 .fl { float: left !important; }

@@ -23,16 +23,21 @@
 	<script type="text/javascript" src="scripts/jquery.easing.1.3.js"></script>
 	<script src="scripts/main.js"></script>	
 </head>
-
 <body>
-
 
 <!-- - - - - - - - - - - - - -
 	header
  - - - - - - - - - - - - - -->
 
-<header role="banner" class="row">
-	<h1>Daisuke Nishiyama<br>Portfolio</h1>
+<header id="headerWrapper">
+	<div id="headerContainer">
+		<h1 class="dn">Daisuke Nishiyama<br>Portfolio</h1>
+		<img src="images/headerText01.png" id="headerText01">
+		<h2 class="dn">美味しい"クリエイター"、できました</h2>
+		<img src="images/nameLogo.png" id="headerLogo">
+		<p class="dn">西山 大輔<br/>Since 1992</p>
+		<img src="images/headerText02.png" id="headerText02">
+	</div>
 </header>
 
 <!-- /header -->
@@ -46,21 +51,190 @@
 	<!-- - - - - - - - - - - - - -
 		contents - concept
 	 - - - - - - - - - - - - - -->   
-	<article id="concept">
-		<div class="contents" id="contentsConcept">
-			<h2>About Me</h2>
-			<h3>Style</h3>
-			<p>「デザイナー」という職種を軸に働くクリエイター。</p>
+	<article class="contentContainer" id="conceptWrapper">
+		<div id="concept">
+			<h3>CONCEPT</h3>
+			<h4>西山大輔の目指した美味しさ</h4>
+			<div class="column2Wrapper">
+				<div class="column2Container">
+					<img src="images/conceptIcon.png" id="conceptIcon">
+				</div>
+				<div class="column2Container">
+					<h5>目指したのは”お米”のような、<br/>どんな場所でも活躍できるクリエイター</h5>
+					<p>「西山 大輔」は、経験に裏打ちされた高度な技術力や、<br/>洗練された美術力を持つ“主菜”のようなデザイナーではありません。</p>
+					<p>持ち味は、デザイナーという枠に囚われない幅広い業務範囲。<br/>そのワークスタイルがもたらす職種を超えたコミュニケーションは、<br/>チーム開発の現場にておおいに力を発揮します。</p>
+					<p>“主菜”の味を受け止め、調和し、<br/>食卓を一つに纏め上げる “お米”のようなデザイナーは、<br/>どんな場所でも必要とされるのではないでしょうか。</p>
+					<p>そんな”お米”のようなクリエイターが「西山 大輔」なのです。</p>
+				</div>
+			</div>
 		</div>
 	</article>
 
+
+	<!-- - - - - - - - - - - - - -
+		contents - product
+	 - - - - - - - - - - - - - -->   
+	<article class="contentContainer" id="productWrapper">
+		<div id="product">
+			<h3>PRODUCT</h3>
+			<h4>西山大輔の美味しい活用事例</h4>
+			<div class="column2Wrapper">
+				<div class="column2Container">
+					<img src="images/gallery/img01S.png" class="galleryImgS">
+				</div>
+				<div class="column2Container">
+					<img src="images/gallery/img01S.png" class="galleryImgS">
+				</div>
+				<div class="column2Container">
+					<img src="images/gallery/img01S.png" class="galleryImgS">
+				</div>
+				<div class="column2Container">
+					<img src="images/gallery/img01S.png" class="galleryImgS">
+				</div>
+				<div class="column2Container">
+					<img src="images/gallery/img01S.png" class="galleryImgS">
+				</div>
+				<div class="column2Container">
+					<img src="images/gallery/img01S.png" class="galleryImgS">
+				</div>
+			</div>
+		</div>
+	</article>
+
+
+	<!-- - - - - - - - - - - - - -
+		contents - product
+	 - - - - - - - - - - - - - -->   
+	<article class="contentContainer" id="skillWrapper">
+		<div id="skill">
+			<h3>SKILL</h3>
+			<h4>西山大輔の成分表示</h4>
+			<ul class="column4Wrapper">
+				<li class="column4Container">
+					<h5>Photoshop</h5>
+					<img src="images/skillIcon01.png" class="skillIcon">
+					<h6><span>★★★★★</span></h6>
+					<p>UI素材作成<br/>UIモック作成<br/>バナークリエイティブ<br/>などの作成</p>
+				</li>
+				<li class="column4Container">
+					<h5>Illustrator</h5>
+					<img src="images/skillIcon02.png" class="skillIcon">
+					<h6><span>★★★★</span>★</h6>
+					<p>UI素材作成<br/>ロゴ作成<br/>その他クリエイティブ<br/>などの作成</p>
+				</li>
+				<li class="column4Container">
+					<h5>AfterEffect</h5>
+					<img src="images/skillIcon03.png" class="skillIcon">
+					<h6><span>★★</span>★★★</h6>
+					<p>簡単な演出の作成<br/>簡単な動画編集</p>
+				</li>
+				<li class="column4Container">
+					<h5>Maya</h5>
+					<img src="images/skillIcon04.png" class="skillIcon">
+					<h6><span>★</span>★★★★</h6>
+					<p>簡単なモデル作成<br/>モデル配置<br/>レンダリング</p>
+				</li>
+				<li class="column4Container">
+					<h5>WEB Coding</h5>
+					<img src="images/skillIcon05.png" class="skillIcon">
+					<h6><span>★★★★</span>★</h6>
+					<p>HTML,CSSを用いた<br/>WEBサイト作成<br/>JavaScriptを用いた<br/>簡単なアニメーション</p>
+				</li>
+				<li class="column4Container">
+					<h5>Illustration</h5>
+					<img src="images/skillIcon06.png" class="skillIcon">
+					<h6><span>★★</span>★★★</h6>
+					<p>SAI,Photoshopを用いた<br/>簡単なイラスト作成<br/>ゲーム用アイテム<br/>リソース作成</p>
+				</li>
+				<li class="column4Container">
+					<h5>Unity</h5>
+					<img src="images/skillIcon07.png" class="skillIcon">
+					<h6><span>★★★★</span>★</h6>
+					<p>UI作成/配置<br/>UIアニメーション<br/>shurikenを用いた<br/>パーティクルエフェクト</p>
+				</li>
+				<li class="column4Container">
+					<h5>Cocos 2d-x</h5>
+					<img src="images/skillIcon08.png" class="skillIcon">
+					<h6><span>★★★</span>★★</h6>
+					<p>UI作成/配置<br/>UIアニメーション<br/>パーティクルエフェクト</p>
+				</li>			
+			</ul>
+		</div>
+	</article>
+
+
+	<!-- - - - - - - - - - - - - -
+		contents - profile
+	 - - - - - - - - - - - - - -->   
+	<article class="contentContainer" id="contentWrapper">
+		<div id="profile">
+			<h3>PROFILE</h3>
+			<h4>生産者紹介</h4>
+			<img src="images/nameLogo.png" id="profileIcon">
+			<div class="profileText">
+				<p>西山 大輔 [ Daisuke Nishiyama]</p>
+				<p>男 25歳 魚座 AB型</p>
+				<p>Game Creator, UI Designer</p>
+			</div>
+					
+
+			<div class="column2Wrapper">
+				<div class="column2Container">
+					<div class="columnItem">
+						<img src="images/profileIcon01.png" class="profileTitle">
+						<h5>来歴</h5>
+						<ul>
+							<li>1992：新潟県燕市、バイク屋の長男として生まれる</li>
+							<li>2007：国立長岡工業高等専門学校 電子制御工学科入学</li>
+							<li>2012：国立京都工芸繊維大学 デザイン経営工学課程編入学</li>
+							<li>2014：SAP系企業にUIデザイナーとして入社</li>
+							<li>2014：結婚</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="column2Container">
+					<div class="columnItem">
+						<img src="images/profileIcon02.png" class="profileTitle">
+						<h5>嗜好</h5>
+						<ul>
+							<li>サブカルチャー：マンガ・アニメ・ゲーム</li>
+							<li>インターネット：Tumblr, Minecraft</li>
+							<li>炭水化物：米・小麦・ラーメン(背脂)</li>
+							<li>女子高生：セーラー・カーディガン・プリーツスカート</li>
+						</ul>
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+	</article>
+
+
 </main>
+<!-- /contents -->
+
 
 <!-- - - - - - - - - - - - - -
 	footer
  - - - - - - - - - - - - - -->
-<footer role="contentinfo" class="row">
-	<h5>©Daisuke Nishiyama 2014-2017 npyama.com</h5>
+<footer>
+	<a href="#headerWrapper"><img src="images/footerBtn.png" id="footerBtn"></a>
+	<div id="footerContainer">
+		<ul>
+			<li><a href="#headerWrapper">TOP</a></li>
+			<li>｜</li>
+			<li><a href="#conceptWrapper">CONCEPT</a></li>
+			<li>｜</li>
+			<li><a href="#productWrapper">PRODUCT</a></li>
+			<li>｜</li>
+			<li><a href="#skillWrapper">SkILL</a></li>
+			<li>｜</li>
+			<li><a href="#profileWrapper">PROFILE</a></li>
+		</ul>
+		<h5>©Daisuke Nishiyama 2014-2017 npyama.com</h5>
+	</div>
 </footer>
 <!-- /footer -->
 
