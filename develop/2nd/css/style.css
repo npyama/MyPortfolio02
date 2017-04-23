@@ -198,6 +198,123 @@ header {
 
 
 /***************************
+  subHeader
+****************************/
+
+@media(max-width: 1600px) and (min-width: 1030px){/*PC*/
+#subHeaderWrapper {
+  max-width: 100%;
+  height:150px;
+  margin:0 auto 100px;
+  background-image: url("../images/HeaderS.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size:cover;
+  -moz-background-size:cover;
+  -webkit-background-size:cover;
+  -o-background-size:cover;
+  -ms-background-size:cover;  
+}
+
+
+#subHeaderContainer {
+  max-width: 1600px;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+#topBtn {
+  display: block;
+  text-align: center;  
+  position:absolute;
+  width: 160px;
+  height: auto;
+  top: 70px;
+  left:5%;
+}
+
+}
+
+@media(min-width: 1600px){/*LargePC*/
+#subHeaderWrapper {
+  max-width: 100%;
+  height:150px;
+  margin:0 auto 100px;
+  background-image: url("../images/HeaderS.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size:cover;
+  -moz-background-size:cover;
+  -webkit-background-size:cover;
+  -o-background-size:cover;
+  -ms-background-size:cover;  
+}
+
+
+#subHeaderContainer {
+  max-width: 1600px;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+#topBtn {
+  display: block;
+  text-align: center;  
+  position:absolute;
+  width: 160px;
+  height: auto;
+  top: 70px;
+  left:5%;
+}
+
+}
+
+
+@media (max-width: 1030px) and (min-width: 768px){/*タブレット*/
+
+
+}
+
+@media (max-width: 767px) {/*スマホ*/
+#subHeaderWrapper {
+  max-width: 100%;
+  height:150px;
+  margin:0 auto 100px;
+  background-image: url("../images/HeaderS.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size:cover;
+  -moz-background-size:cover;
+  -webkit-background-size:cover;
+  -o-background-size:cover;
+  -ms-background-size:cover;  
+}
+
+
+#subHeaderContainer {
+  max-width: 1600px;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+#topBtn {
+  display: block;
+  text-align: center;  
+  position:absolute;
+  width: 160px;
+  height: auto;
+  top: 70px;
+  left:5%;
+}
+
+}
+
+
+
+/***************************
 	Contents
 ****************************/
 
@@ -658,12 +775,12 @@ footer li{
 
 #footerBtn{
   display: block;
-  text-align: center;  
   position:absolute;
   width: 80px;
-  height: auto;
+  margin:auto;
   top:-40px;
-  left:47%;
+  left: 0;
+  right: 0;
 }
 
 @media(max-width: 1600px) and (min-width: 1030px){/*PC*/
@@ -677,16 +794,158 @@ footer li{
 
 
 
+/***************************
+  page
+****************************/
+#page {
+  position: relative;
+  width: 80%;
+  height: auto;
+  margin:100px auto 100px;
+}
+ 
+#page h4{
+  font-size:36px;
+  font-weight: bold;
+  line-height: 150%;
+}
+
+#page h5{
+  margin: 0 0 3em ;
+}
+
+#page p{
+  line-height: 120%;
+  margin: 0 0 2em;
+}
+
+.galleryImg {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin:5% auto 5%;
+  padding:0;
+}
+
+.visitBtn {
+  font-size:20px;
+  display: block;
+  position: relative;
+  width: 30%;
+  margin:20% auto 20%;
+  padding:1.5em 0em;
+  text-align: center;
+  z-index: 2;
+  background-color: #fff;
+  border: 2px solid #000;
+  color: #000;
+  line-height: 50px;
+}
+.visitBtn,
+.visitBtn::before,
+.visitBtn::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.visitBtn:hover {
+  background-color: #82ae46;
+  border-color: #000;
+  color: #000;
+}
+.visitBtn::before,
+.visitBtn::after {
+  position: absolute;
+  z-index: -1;
+  display: block;
+  content: '';
+  top: 0;
+  width: 50%;
+  height: 100%;
+  background-color: #fff;
+}
+.visitBtn::before {
+  right: 0;
+}
+.visitBtn::after {
+  left: 0;
+}
+
+.visitBtn:hover::before,
+.visitBtn:hover::after {
+  width: 0;
+  background-color: #fff;
+}
 
 
 
+.pager {
+  text-align: center;
+}
 
+.pager li{
+  font-size: 18px; 
+  display: inline;
+}
 
+.pagerCenter{
+  margin:0 2.8% 0;
+}
 
+.pagerBtn {
+  display: inline-block;
+  position: relative;
+  font-size:20px;
+  text-align: center;
+  width: 5em;
+  padding:1em 1em;
+  z-index: 2;
+  background-color: #fff;
+  border: 2px solid #000;
+  color: #000;
+  line-height: 50px;
+}
+.pagerBtn,
+.pagerBtn::before,
+.pagerBtn::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
 
+.pagerBtn:hover {
+  background-color: #82ae46;
+  border-color: #000;
+  color: #000;
+}
+.pagerBtn::before,
+.pagerBtn::after {
+  position: absolute;
+  z-index: -1;
+  display: block;
+  content: '';
+  top: 0;
+  width: 50%;
+  height: 100%;
+  background-color: #fff;
+}
+.pagerBtn::before {
+  right: 0;
+}
+.pagerBtn::after {
+  left: 0;
+}
 
-
-
+.pagerBtn:hover::before,
+.pagerBtn:hover::after {
+  width: 0;
+  background-color: #fff;
+}
 
 
 
@@ -694,9 +953,59 @@ footer li{
 }
 
 @media (max-width: 1030px) and (min-width: 768px){/*タブレット*/
+#page {
+  position: relative;
+  width: 96%;
+  height: auto;
+  margin:100px auto 100px;
+}
 }
 
 @media (max-width: 767px) {/*スマホ*/
+#page {
+  position: relative;
+  width: 96%;
+  height: auto;
+  margin:100px auto 100px;
+}
+ 
+#page h4{
+  font-size:36px;
+  font-weight: bold;
+  line-height: 150%;
+}
+
+#page h5{
+  margin: 0 0 3em ;
+}
+
+#page p{
+  line-height: 160%;
+  margin: 0 0 2em;
+}
+
+.galleryImg {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin:5% auto 5%;
+  padding:0;
+}
+
+.visitBtn {
+  font-size:20px;
+  display: block;
+  position: relative;
+  width: 80%;
+  margin:20% auto 20%;
+  padding:1.5em 0em;
+  text-align: center;
+  z-index: 2;
+  background-color: #fff;
+  border: 2px solid #000;
+  color: #000;
+  line-height: 50px;
+}
 }
 
 
