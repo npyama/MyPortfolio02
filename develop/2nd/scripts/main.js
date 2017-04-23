@@ -1,30 +1,26 @@
 /****************************************
- Contents Toggle
+ Contents 1stLOAD
 ****************************************/
-$(function(){
- 	$('#btnAboutMe').click(function() {
-  		$('#contentsAboutMe').slideToggle(600, 'easeInQuint' , function() {
-  		});
-	});
+/*
+$(window).load(function () {
+	$('#headerLogo').fadeIn(4000);
 });
 
-$(function(){
- 	$('#btnSkill').click(function() {
-  		$('#contentsSkill').slideToggle(600, 'easeInQuint' , function() {
-  		});
-	});
+
+$(window).load(function () {
+$('#headerLogo').css('opacity', 0);
+$('#headerLogo').on('inview', function() {
+	if (isInView) {
+		if (visiblePartY == 'both') {
+			$(this).stop().animate({opacity:1}, 300);
+		}
+	}
+	else {
+		$(this).stop().animate({opacity: 0}, 300);
+	}
 });
-
-$(function(){
- 	$('#btnProduct').click(function() {
-  		$('#contentsProduct').slideToggle(600, 'easeInQuint' , function() {
-  		});
-	});
 });
-/******** END Contents Toggle ********/
-
-
-
+*/
 
 
 $(function(){
@@ -51,16 +47,6 @@ $('.contentsBtn').click(function() {
 	}, { duration:200, easing: 'linear', });
 
 });
-
-
-
-/****************************************
-  least.js
-****************************************/
-$(document).ready(function(){
-    $('.least-gallery').least();
-});
-
 
 
 });
